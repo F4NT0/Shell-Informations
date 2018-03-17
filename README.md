@@ -1,15 +1,8 @@
- =================================
-  BASIC INFO - INFORMACOES BASICAS
- =================================
+ 
 
-     Este repositorio do GITHUB foi criado para eu facilmente controlar todas as informacoes sobre o 
- meu conhecimento de Shells CLI (Command-Line Interface) para eu poder ter um controle de todos os
- comandos uteis e atalhos de teclados que agilizem o meu trabalho com cada Sistema Operacional que
- eu utilizar ou surgir mais para a frente.
+     Este repositorio do GITHUB foi criado para eu facilmente controlar todas as informacoes sobre o meu conhecimento de Shells CLI (Command-Line Interface) para eu poder ter um controle de todos os comandos uteis e atalhos de teclados que agilizem o meu trabalho com cada Sistema Operacional que eu utilizar ou surgir mais para a frente.
 
-    Como e muita informacao irei utilizar varios tipos de documentos diferentes para poder controlar
- o fluxo de informacao que irei atualizando no sistema, assim fica mais facil para que eu possa 
- recuperar a informacao mais rapido e agil.
+    Como e muita informacao irei utilizar varios tipos de documentos diferentes para poder controlar o fluxo de informacao que irei atualizando no sistema, assim fica mais facil para que eu possa recuperar a informacao mais rapido e agil.
 
    Se alguem necessitar dessa informacao sinta-se livre para baixar e se conhecer novos comandos
  ou atalhos ou ate mesmo programas que nao estao nos arquivos, por favor me mande um e-mail com
