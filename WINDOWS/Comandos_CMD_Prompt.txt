@@ -1,0 +1,94 @@
+  ======================================================
+  BEM VINDO AO ARQUIVO DE COMANDOS DO PROMPT DE COMANDO
+  ======================================================
+
+  GUIA:
+       + : o simbolo "+" significa que sao mais de uma entrada necessaria e deve possuir um espaco da anterior para a nova.
+
+       < > : as informacoes dentro desse simbolo sao comandos de teclado
+      
+       -> : tudo que vier depois desse simbolo sao instrucoes para o usuario fazer(nao copie com essa seta, e so uma marcacao)
+
+       # : tudo que vier depois desse simbolo significa uma informacao importante.
+
+       Todos os comandos aqui apresentados nao possuem todas as suas informacoes ao total, portanto se deseja saber mais sobre leia os manuais no prompt de comando em si.
+
+       CMD : e o nome simplificado do prompt de comando.
+
+       BW : nome simplificado do botao do windows do teclado.
+
+
+
+  COMANDOS:
+
+    OBS: Os comandos nao possuem uma ordem especifica!
+
+
+   COMO INICIAR UM TERMINAL: 
+   -> < BW + R > , cmd + < enter >
+
+   LER ARQUIVO TEXTO PELO CMD(EXTENSAO TXT):
+   -> type + nomearquivo.txt
+
+   INFORMACAO E AJUDA DENTRO DO CMD:
+   -> help + nomecomando
+   -> help
+   -> /?     
+
+   TROCAR A COR DE FUNDO E DO TEXTO DO CMD:
+   -> color + numeracaocorefonte
+   # para saber o codigo da cor de fundo e fonte: help color
+   # meu favorito: color 0a
+
+  LIMPAR A INFORMACAO DA TELA DO CMD:
+  -> cls
+
+  MOSTRAR TODAS AS PASTAS DO DIRETORIO ATUAL(PASTA ATUAL):
+  -> dir
+  # para saber outras formas de ver as pastas: -> help dir
+
+  COMO SE CONECTAR A OUTRO DIRETORIO:
+  -> cd + nomediretorio #um por vez
+  -> cd + nome1/nome2  #mais de uma por vez
+
+  COMO VOLTAR UM DIRETORIO:
+  -> cd..
+
+  COMO CRIAR UM NOVO DIRETORIO(NO DIRETORIO ATUAL):
+  -> mkdir + nomediretorio
+
+  COMO DELETAR UM DIRETORIO(NO DIRETORIO ATUAL):
+  -> rmdir + /S + /Q + nomediretorio #se a pasta nao estiver vazia
+  -> rmdir + nomediretorio #se a pasta estiver vazia
+
+  COMO DELETAR UM ARQUIVO PELO CMD:
+  -> erase + nomedoarquivo
+
+  COMO CRIAR UM ARQUIVO TEXTO NO DIRETORIO ATUAL:
+  -> echo. + > +  nomedoarquivo.txt #para arquivos txt
+
+  COMO RENOMEAR ARQUIVOS PELO CMD:
+  -> rename +  nomearquivo.extensao +  nomenovo.extensao
+
+  COMO COPIAR UM ARQUIVO PELO CMD:
+  -> copy + nomearquivo.extensao + caminhododiretorio
+  #no caminhododiretorio voce precisa saber o caminho para onde deseja mandar o arquivo
+  # ex: C:\Users\fulano\Desktop\PastaDesejada
+
+ COMO MOVER UM ARQUIVO PELO CMD:
+  -> move /Y nomearquivo.extensao + caminhododiretorio
+  # o caminho tem que ser completo para o comando funcionar
+ 
+  COMO DESLIGAR O COMPUTADOR PELO CMD:
+  -> shutdown /l #faz logoff do sistema
+  -> shutdown /s #desliga o computador
+  -> shutdown /r #reinicia o computador
+
+  INICIAR PROGRAMAS PELO CMD:
+  # na pasta do programa,procure pelo inicializador
+  # alguns programas nao precisam de que tenha .exe no final
+  -> start nomeprograma.exe
+  # novo cmd: -> start cmd
+  # entrar no google chrome: -> start chrome
+
+   
