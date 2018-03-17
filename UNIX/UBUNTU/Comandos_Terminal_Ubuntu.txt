@@ -1,0 +1,110 @@
+ ====================================================
+  BEM VINDO AO ARQUIVO DE COMANDOS DO TERMINAL UBUNTU
+ ====================================================
+
+ GUIA:
+     
+       < > : as informacoes dentro desse simbolo sao comandos de teclado
+
+       -> : tudo que vier depois desse simbolo sao instrucoes para o usuario fazer(nao copie com essa seta, e so uma marcacao)
+
+       # : tudo que vier depois desse simbolo significa uma informacao importante.
+
+       Todos os comandos aqui apresentados nao possuem todas as suas informacoes ao total, portanto se deseja saber mais sobre leia os manuais no prompt de comando em si.
+
+       CMD : e o nome simplificado do prompt de comando.
+
+       BW : nome simplificado do botao do windows do teclado.
+
+
+ COMANDOS:
+
+  OBS: Os comandos nao possuem uma ordem especifica!
+
+
+ COMO ABRIR UM TERMINAL NO UBUNTU:
+ -> < CTRL ALT T >
+
+ COMO ATIVAR AS PERMICOES DE SUPERUSER:
+ -> sudo comandodesejado
+
+ COMO INSTALAR ALGUM PROGRAMA PELO TERMINAL:
+ -> sudo apt-get install nomeprograma
+
+ COMO CRIAR UM DIRETORIO NOVO:
+ -> mkdir nomediretorio
+
+ COMO DELETAR UM DIRETORIO:
+ -> rmdir nomediretorio
+
+ COMO LIMPAR A TELA DO TERMINAL:
+ -> clear
+
+ COMO LER O MANUAL DE UM PROGRAMA:
+ -> man nomeprograma
+
+ COMO FECHAR O TERMINAL:
+ -> exit
+
+ COMO VER O PING DA INTERNET:
+ -> ping
+
+ COMO VER O USO DO DISCO:
+ -> quota
+
+ COMO LISTAR OS DIRETORIOS NO TERMINAL:
+ -> ls
+
+ COMO VER O CAMINHO COMPLETO ATE O DIRETORIO ATUAL:
+ -> pwd
+
+ COMO RENOMEAR UM DIRETORIO NO TERMINAL:
+ -> mv nomeantigo nomenovo
+
+ COMO MUDAR DE DIRETORIO:
+ -> cd nomediretorio
+ -> cd nome\ diretorio
+ -> cd caminho/nomediretorio
+
+ COMO DESLIGAR O COMPUTADOR COM UMA MENSAGEM:
+ -> shutdown -h 1 "mensagem desejada" #nao esquece as aspas
+ 
+ COMO REINICIAR O COMPUTADOR:
+ -> shutdown -r
+
+ COMO ATUALIZAR OS PROGRAMAS PELO TERMINAL:
+ -> sudo apt-get  update
+ 
+ COMO ATUALIZAR O SISTEMA PELO TERMINAL:
+ -> sudo  apt-get upgrade
+
+ COMO VER AS INFORMACOES DO WIFI NO TERMINAL:
+ -> iwconfig
+
+ COMO MOVER UM ARQUIVO PARA OUTRO DIRETORIO:
+ -> mv  nomearquivo.extensao caminhoparadiretorio
+
+ COMO COPIAR UM ARQUIVO PARA OUTRO DIRETORIO:
+ -> cp nomearquivo.extensao caminhoparadiretorio
+
+ COMO SABER O CAMINHO ONDE FICA O PROGRAMA DESEJADO:
+ -> type nomedoprograma
+
+ COMO CRIAR UM NOVO ARQUIVO TEXTO PELO TERMINAL:
+ -> cat nomedoarquivo.extensao
+
+ COMO LOCALIZAR UM ARQUIVO PELO TERMINAL:
+ -> locate nomedoarquivo.extensao
+
+ COMO LER UM TEXTO PELO TERMINAL SEM VIM:
+ -> more nomedotexto.txt
+
+ COMO SABER QUAL SISTEMA OPERACIONAL ESTA USANDO:
+ -> uname
+
+ COMO LER INFORMACOES SOBRE O SITEMA:
+ -> dmesg
+
+ COMO LER TODOS OS COMANDOS POSSIVEIS PELO TERMINAL:
+ -> <TAB TAB>
+

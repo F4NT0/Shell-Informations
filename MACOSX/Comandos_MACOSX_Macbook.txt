@@ -1,0 +1,86 @@
+     ===========================================
+     BEM VINDO AO ARQUIVO DE COMANDOS DO MACOSX
+     ==========================================
+
+
+  GUIA:
+	   + : o simbolo "+" significa que sao mais de uma entrada necessaria e deve possuir um espaco da anterior para a nova.
+
+       < > : as informacoes dentro desse simbolo sao comandos de teclado
+
+       -> : tudo que vier depois desse simbolo sao instrucoes para o usuario fazer(nao copie com essa seta, e so uma marcacao)
+
+       # : tudo que vier depois desse simbolo significa uma informacao importante.
+
+       Todos os comandos aqui apresentados nao possuem todas as suas informacoes ao total, portanto se deseja saber mais sobre leia os manuais no prompt de comando em si.
+
+       CMD : e o nome simplificado do prompt de comando.
+
+       BW : nome simplificado do botao do windows do teclado.
+
+
+ COMANDOS:
+
+    OBS: Os comandos nao possuem uma ordem especifica!
+
+
+  COMO BAIXAR UM ARQUIVO DA INTERNET PELO TERMINAL:
+  -> curl -O urldoarquivo
+
+  COMO DESLIGAR O MACBOOK NA HORA:
+  -> sudo shutdown -h now
+
+  COMO LISTAR OS DIRETORIOS PELO TERMINAL:
+  -> ls
+ 
+  COMO MUDAR DE DIRETORIO PELO TERMINAL:
+  -> cd nomedodiretorio
+  -> cd nome\ do\ diretorio
+  -> cd ~/caminhodoretorio/nomediretorio
+
+  COMO VER TODO O CAMINHO PARA O DIRETORIO ATUAL:
+  -> pwd
+
+  COMO CRIAR UM DIRETORIO NO TERMINAL:
+  -> mkdir nomedodiretorio
+
+  COMO DELETAR UM DIRETORIO NO TERMINAL:
+  -> rmdir nomedodiretorio
+
+  COMO LER UM ARQUIVO PELO TERMINAL:
+  -> more nomedoarquivo
+
+  COMO MOVER UM ARQUIVO PELO TERMINAL:
+  -> mv ~/caminho/nomedoarquivo.extensao ~/diretoriodesejado
+
+  COMO COPIAR UM ARQUIVO PELO TERMINAL:
+  -> cp ~/caminho/nomedoarquivo.extensao ~/diretoriodesejado
+
+  COMO VER TODOS OS COMANDOS DO TERMINAL:
+  -> help
+
+  COMO VER TODOS OS COMANDOS ZSH DO TERMINAL ITERM:
+  -> man zshall
+
+  COMO VER TODOS OS PROCESSOS ATIVOS NO MACBOOK:
+  -> ps
+
+  COMO ABRIR PROGRAMAS PELO TERMINAL:
+  -> open nomedoprograma
+  -> open http://linkdosite
+  
+  COMO FAZER O COMPUTADOR FALAR PELO TERMINAL:
+  -> say mensagem
+  -> say -f nomearquivo.extensao
+
+  COMO LER O MANUAL DE UM PROGRAMA PELO TERMINAL:
+  -> man nomedoprograma
+  -> man nomedocomando
+
+  COMO VER O ARMAZENAMENTO DO DISCO PELO TERMINAL:
+  -> df
+
+  COMO VER O QUE O NOTE ESTA FAZENDO DENTRO DO SITEMA: 
+  -> sudo fs_usage
+
+   
