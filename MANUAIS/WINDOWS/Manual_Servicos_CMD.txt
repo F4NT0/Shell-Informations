@@ -1,0 +1,72 @@
+  =================================
+  MANUAL DE SERVICOS UTEIS PELO CMD
+  =================================
+
+ COMO VERIFICAR O SISTEMA PELO CMD:
+    1) va no desktop e clique no botao do windows + x
+    2) selecione a opcao: prompt de comando(admin)
+    3) escreva sfc /scannow
+    4) ele ira verificar todo o sistema e depois responde
+       se existe algum problema no computador
+    5) deixe chegar ate o fim e dar o resultado, nao pare
+       o processo antes do termino
+ 
+ COMO FORMATAR UM HD/PENDRIVE PELO TERMINAL:
+    1) abra o prompt de comando
+    2) digite: diskpart
+    3) espere aparecer escrito diskpart a esquerda 
+    4) digite: list disk
+    5) ira aparecer todos os HDS/pendrives no sistema
+    6) HD DISK 0 e o sistema principal do computador,
+       portanto nao delete ou formate ele
+    7) depois de saber qual e o seu HD que deseja formatar,
+       siga os seguintes comandos:
+           * select disk x (x e o numero do HD desejado)
+           * clean (vai limpar o HD)
+           * create partition primary
+           * select partition 1
+           * active
+           * format fs=fat quick
+           * assign
+           * exit
+
+  COMO ABRIR ATALHOS DE PROGRAMAS PELO TERMINAL:
+    1) crie um atalho de programa desejado em um diretorio
+    2) abra um prompt de comando
+    3) va ate um diretorio antes do diretorio do programa 
+    4) escreva: cd + 3primeirasletrasdodiretorio
+    5) clique no botao TAB
+    6) adicione o simbolo \ depois de completar o nome do
+       diretorio
+    7) escreva as 3 primeiras letras do atalho
+    8) clique no botao TAB de novo
+    9) clique em ENTER
+
+              ou
+    1) va ate a pasta do atalho pelo prompt
+    2) escreva: start + nomedoatalho
+    3) clique em ENTER
+
+
+  COMO DESCOBRIR A SENHA DO WIFI PELO TERMINAL:
+    1) abra um terminal com permissao de admin
+    2) escreva: netsh wlan show profile
+    3) clique em enter e espere carregar
+    4) verifique qual e o wifi que deseja saber a senha
+    5) escreva: netsh wlan show profile nomedarede key=clear
+    6) deixe carregar as informacoes
+    7) procure uma area chamada: key content(conteudo da chave)
+    8) o codigo que aparecer do lado desse nome e a senha do
+       wifi.
+
+  COMO CONECTAR NO TERMINAL DE ADMIN:
+     testado no windows 10
+    1) opcao pelo desktop
+         * va no desktop
+         * clique no botao do windows + x
+         * selecione: prompt de comando(admin)
+         * ou selecione: powershell(admin)
+    2) opcao pelo proprio terminal
+         * abra um terminal comum
+         * escreva: cd\
+         * deixe carregar e escreva: cd windows\system32 
