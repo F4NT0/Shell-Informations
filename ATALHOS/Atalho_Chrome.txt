@@ -1,0 +1,41 @@
+   ============================
+   ATALHOS PARA O GOOGLE CHROME
+   ============================
+
+
+  Principais Atalhos:
+
+   ALT + HOME = volta para a homepage do chrome
+
+   ALT + TAB = troca entre abas do chrome
+
+   ALT + SETA ESQUERDA = volta uma pagina na aba atual
+
+   ALT + SETA DIREITA = vai para uma pagina seguinte
+
+   ESC = para o download e carrega a pagina atual
+
+   CTRL + (- OU +) = Zoom Out e Zoom In na pagina
+
+   CTRL + A = seleciona tudo do texto da pagina
+
+   CTRL + (K ou E) = faz uma pesquisa do google
+
+   CTRL + N = abre uma nova tela com uma nova aba
+
+   F5 = recarrega a pagina onde voce esta
+
+   CTRL + T = abre uma nova tab no chrome
+
+   CTRL + U = mostra o codigo fonte da pagina
+
+   CTRL + SHIFT + T = reabre a tab que fechou recentemente
+
+   CTRL + O = procura pelo nome do arquivo
+
+   TAB = clicando em TAB dentro do chrome tu altera a posicao
+do mouse, onde pode clicar em links sem mouse
+
+   CTRL + J = exibe o historico de downloads
+
+   CTRL + F4 = fecha a aba onde voce esta no momento

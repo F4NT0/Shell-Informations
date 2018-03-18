@@ -1,0 +1,37 @@
+ ==============================
+  Manual do programa OH MY ZSH
+ ==============================
+
+  Oh-my-zsh e um framework para controlar a configuracao do
+sistema zsh, vem com plugins,temas,ferramentas e ajudas.
+
+ zsh = Z shell (zsh) e um Shell Unix que possui um shell
+interativo com um poderoso interpretador de comandos.
+
+ pode se usar no Macbook para facilitar a sua vida, para mais
+detalhes sobre olhe no site oficial do programa
+
+  www.ohmyz.sh
+
+ como instalar:
+
+    1) Abra um terminal no Macbook (pode ser iterm2 se tiver)
+    2) escreva esse codigo tudo na mesma linha:
+
+ sh -c "$(curl -fsSL https://raw.github.com/robbyrussel/oh-my-zsh/master/tools/install.sh)"
+
+ 
+ como mudar o tema do terminal usando oh-my-zsh:
+
+    1) Abra o terminal
+    2) escreva: open ~/.zshrc
+    3) procurar no arquivo: ZSH_THEME
+    4) olhe no site do oh-my-zsh e procure o nome do tema desejado
+    5) na area do ZSH_THEME, coloque o nome do tema desejado
+    6) salve e feche
+
+
+ como ver todos os comandos do ZSH:
+    coloque o seguinte comando no terminal: man zshall
+
+

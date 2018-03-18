@@ -1,0 +1,34 @@
+  ===========================
+  MANUAL DO PROGRAMA HOMEBREW
+  ===========================
+
+
+  Homebrew e um gerenciador de pacotes do macosx, onde se pode
+baixar programas que nao precisam ser do macosx, facilitando a
+vida para os desenvolvedores que precisam de programas e os 
+instalar automaticamente no sistema.
+
+ como instalar o Homebrew:
+
+  e necessario ter o SO do macosx mais recente(no meu caso uso
+o High Sierra).
+
+  1) Abra o terminal(ou Iterm2)
+  2) copie o seguinte comando no terminal:
+
+ /user/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+  tudo na mesma linha exatamente como acima
+
+
+ como usar:
+
+   site do programa: https://brew.sh/index_pt-br
+
+ 1) para instalar no terminal um programa, utilizamos o comando brew:
+
+   exemplo:  brew install wget
+
+ 2) todas as instalacoes ficam no sistema onde voce instalou, ou seja, no terminal onde se usou o comando
+
+ 

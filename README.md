@@ -21,7 +21,7 @@ WELCOME TO MY INFORMATIONAL REPOSITORY
        WINDOWS: 
 
       * Comandos para o Prompt de Comando do Windows
-      * Comandos para o PowerShell do Windows
+      * Comandos para o PowerShell do Window
       * Manual sobre o Bash
       * Manual de Utilidades do CMD
 
@@ -30,12 +30,14 @@ WELCOME TO MY INFORMATIONAL REPOSITORY
       * Comandos para o Terminal do Linux
       * Comandos para o Terminal de varios SO livres (tratados pelos seus nomes)
       * Manual de Instalacoes e Gerenciadores de Aplicacoes
+   
 
       MACOSX:
 
       * Comandos para o Terminal Natural do MACOSX
       * Comandos para o Iterm2 e Iterm3
       * Comandos e Informacao sobre o HOMEBREW
+     
 
       ATALHOS:
 

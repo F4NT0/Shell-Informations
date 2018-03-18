@@ -1,0 +1,29 @@
+  =========================
+  MANUAL DO PROGRAMA ITERM2
+  ========================
+
+  Iterm e um simulador de terminal para MacOSX mais avancado
+que o terminal comum do Mac, funcionando com o sistema ZSH
+(Z Shell) com ferramentas de ultima geracao de controle.
+
+ Melhor terminal do MacBook, Facilita mil vezes o trabalho
+
+ Para instalar o Sistema:
+
+  va no site:
+    https://www.iterm2.com/downloads.html
+
+  Selecione a versao estavel mais recente ou na versao do 
+seu sistema operacional do macosx
+
+ Comandos para usar no Iterm2 para facilitar sua vida:
+
+  dividir a tela na Horizontal: Command + D (teclas)
+  dividir a tela na Vertical: Commands + Shift + D (teclas)
+
+  trocar entre telas no terminal:
+
+   ir para a Direita: Command + ] (teclas)
+   ir para a Esquerda: Command + [ (teclas)
+
+ 
