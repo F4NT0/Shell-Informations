@@ -1,0 +1,8 @@
+   ====================
+    ATALHOS PARA MACOSX
+   ====================
+
+  Para olhar as informacoes no terminal:
+     command + setas para cima e para baixo
+
+  
