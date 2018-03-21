@@ -45,7 +45,8 @@
   -> mkdir nomedodiretorio
 
   COMO DELETAR UM DIRETORIO NO TERMINAL:
-  -> rmdir nomedodiretorio
+  -> rmdir nomedodiretorio #se a pasta estiver vazia
+  -> rm -Rf nomediretorio #se a pasta possuir coisas
 
   COMO LER UM ARQUIVO PELO TERMINAL:
   -> more nomedoarquivo
