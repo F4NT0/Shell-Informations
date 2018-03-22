@@ -1,0 +1,21 @@
+   ===================================
+   COMANDOS PARA O TERMINAL DO DEBIAN
+   ==================================
+
+  
+
+
+
+   COMANDOS:
+
+     COMO DESCOMPACTAR UM ARQUIVO .DEB:
+      -> dpkg -i caminho/ate/o/arquivo
+
+     COMO SE CONECTAR COM A PENDRIVE PELO TERMINAL:
+      #quando conectado em sua conta no LAPRO:
+         * volte até antes do /home com "cd .."
+         * procure uma pasta chamada "media"
+         * utilize o comando "cd nomepasta" e siga os proximos passos
+         * conecte nela e procure seu numero de matricula
+         * encontre o nome de seu pendrive
+         * entre no seu pendrive
