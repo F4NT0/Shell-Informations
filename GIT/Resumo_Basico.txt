@@ -1,0 +1,106 @@
+     =================================
+      RESUMO BÁSICO DE COMANDOS DO GIT
+     =================================
+
+    CRIANDO BRANCH PARA TRABALHAR FORA DA MASTER:
+      -> git checkout -b nomedabranch
+      
+      #irá criar uma branch e lhe enviar para lá
+   
+    VOLTANDO PARA A MASTER SE DESEJAR:
+      -> git checkout master
+ 
+    DELETANDO UMA BRANCH:
+     -> git branch -d nomedabranch
+
+
+
+     REPOSITÓRIO DE DENTRO:
+
+    1) Inicie a pasta com GIT:
+      -> git init
+
+    2) Verifique se os Arquivos estão salvo no GIT:
+      -> git status
+      # Se vermelho: não está salvo
+      # Se Verde: está salvo
+
+    3) Salve os Arquivos no GIT:
+       -> git add --all #salva tudo
+      
+       -> git add *.extensao #se for específico
+
+    4) Faça um commit com as alterações:
+       -> git commit -m "Mensagem Desejada"
+  
+    5) Para conectar seu Repositorio local com um 
+       repositorio do site desejado:
+       
+       -> git remote add origin codigopasta 
+     
+    5) Envie para o seu repositório online:
+
+       5.1) Se estiver na master:
+            -> git push -u origin master
+
+       5.2) Se estiver em uma branch:
+            -> git push -u origin nomebranch
+
+    6) Se desejar atualizar seu GIT com as
+       alterações feitas em outro computador:
+
+         -> git pull
+
+    7) Se desejar atualizar seu Master com as 
+       alterações no Branch:
+    
+          -> git merge master
+
+
+
+      REPOSITORIO DE FORA:
+
+    1) Para baixar o Repositorio do site onde
+       o criou:
+
+       -> git clone codigorepositorio
+
+       ** Esse codigorepositorio é o código que foi criado para
+          se poder clonar o repositorio em qlqr computador com GIT
+          instalado.
+       **
+
+     
+    2) Trabalhe dentro desse Repositorio
+
+    3) Para verificar se esta salvo no GIT:
+       -> git status
+       # Se vermelho: não esta salvo
+       # Se verde: esta salvo
+
+    4) Para salvar no GIT:
+       -> git add --all #Salva tudo
+
+       -> git add *.extensao #Salva específico
+
+    5) Fazer um commit para salvar as alterações:
+
+       -> git commit -m "Mensagem Desejada"
+
+    6) Para enviar para o site desejado:
+
+       Se for na Master:
+
+         -> git push origin master
+
+       Se for no Branch:
+         
+         -> git push origin nomebranch
+
+    7) se deseja atualizar seu repositorio:
+   
+        -> git pull
+
+    8) Se deseja fazer merge de um branch com a master:
+         -> git merge master
+    

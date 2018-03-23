@@ -1,0 +1,116 @@
+   =============================
+   COMO USAR O GIT NO TERMINAL
+   ============================
+
+  CRIANDO UM REPOSITÓRIO LOCAL:
+
+   1) Crie uma pasta onde irá trabalhar com o projeto
+   
+   2) Inicie o GIT na pasta com o comando: 
+      -> git init
+
+   3) Trabalhe e coloque o que deseja na pasta.
+
+   4) Crie um arquivo chamado README com extensão .md, 
+      essa extensão é para organizar o arquivo com 
+      o controle de texto chamado MarkDown.
+
+   5) Para saber se  foi salvo ou não, utilize o seguinte comando:
+
+      -> git status
+
+      # se estiver em vermelho, significa que não esta salvo as 
+        alterações
+
+      # se estiver em verde, significa que ja esta salvo
+
+   6) Para salvar tudo com o GIT local, utilize os seguintes comandos:
+
+      -> git add *.java  #Salva todos os arquivos .java do projeto
+      
+      -> git add *.txt   #Salva todos os arquivos .txt  do projeto
+      
+      -> git add --all  #SALVA TUDO DO PROJETO
+
+   7) Agora, iremos fazer um Commit, que usamo para confirmar as mudanças:
+   
+      -> git commit -m "Mensagem Desejada"
+
+      #isso irá salvar todas as alterações em um commit que poderemos
+       enviar para o GITHUB depois
+
+   8) Como nessa opção não criamos ainda um repositório, temos que criar um no GITHUB ou GITLAB ou Bitbucket
+        
+       #para criar um repositorio é só seguir o que esses sites falam como se faz
+       # copie o endereço que for criado quando criar o repositorio
+  
+   9) clone o repositorio no seu computador com o seguinte comando:
+      
+      -> git remote add origin enderecodorepositorio
+
+       #enderecodorepositorio é o endereço que tu usa para clonar o repositorio
+
+   10) depois de que concluir, utilize esse comando para enviar para o repositorio tudo
+      que tiver dentro do repositorio local:
+
+      -> git push -u origin master
+
+  11) coloque seu nome e sua senha para se conectar com qualquer um dos sites
+      e esperar que termine o envio e pronto, seus documentos estarão online
+
+
+
+
+  
+
+    CLONANDO UM REPOSITORIO E TRABALHANDO NELE:
+
+   
+
+    1) Vá no site GITHUB ou GITLAB ou BITBUCKET
+
+    2) Crie um repositorio seguindo o que o site diz
+
+    3) Copie o código do Repositorio que ira ser criado
+
+    4) Em seu computador, abra um terminal e vá até a pasta desejada
+
+    5) Coloque o seguinte comando no terminal:
+        -> git clone codigo
+
+        # codigo é o endereço do diretório
+
+    6) Ele vai pedir seu nome do site e a sua senha para entrar no site
+
+    7) Depois de baixado, entre no repositorio pelo terminal e trabalhe
+
+    8) Para saber se esta salvo, utilize o seguinte comando:
+        -> git status
+
+      # se em vermelho: não esta salvo
+      # se em verde: está salvo
+
+    9) Depois de Trabalhar no seu projeto e deseja salvar no GIT, 
+       Faça o seguinte:
+
+        -> git add --all  #Salva tudo que você fez no repositorio
+ 
+   10) Depois de salvar no GIT do sistema, iremos fazer um commit para
+       que as alterações fiquem em um local salvo, para depois enviar
+       para a internet.
+
+         -> git commit -m "Mensagem Desejada"
+
+   11) Após feito o Commit e quiser ver todos os commits feitos, use:
+
+        -> git log
+
+   12) Agora, para enviar para o Site desejado, use o seguinte comando:
+
+        -> git push origin master
+
+       #irá enviar tudo que esta no commit para o site e salvar lá tambem
+
+   13) Coloque seu nome e sua senha e pronto, tudo que voce fez esta salvo no site
+
+     
