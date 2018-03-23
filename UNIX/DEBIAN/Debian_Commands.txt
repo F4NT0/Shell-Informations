@@ -1,4 +1,4 @@
-   ===================================
+   ==================================
    COMANDOS PARA O TERMINAL DO DEBIAN
    ==================================
 
@@ -19,3 +19,12 @@
          * conecte nela e procure seu numero de matricula
          * encontre o nome de seu pendrive
          * entre no seu pendrive
+
+      COMO ABRIR UMA NOVA TELA NO GNOME-TERMINAL DO DEBIAN:
+       -> gnome-terminal --working-directory=caminho/para/dir
+        #Caminho para Dir é o caminho para a pasta desejada
+
+      COMO ABRIR UMA TELA DE INTERFACE GRAFICA PELO TERMINAL:
+       -> xdg-open nomedir
+        #nomedir é o nome do diretorio que deseja abrir gráficamente
+        #Exemplo: xdg-open Downloads

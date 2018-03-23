@@ -1,0 +1,26 @@
+    =======================================
+      Atalhos Gerais de Qualquer Computador
+    =======================================
+
+    ATALHO PARA TROCAR DE PROGRAMAS RAPIDAMENTE:
+     < ALT + TAB > #troca entre programas abertos
+     #para selecionar outro programa, vai clicando em <TAB>
+
+    ATALHO PARA SELECIONAR TODO UM TEXTO:
+     < CTRL + A > #seleciona todo o texto do programa ou site
+
+    ATALHO PARA SALVAR UM DOCUMENTO DE TEXTO:
+     < CTRL + S > #salva o documento no programa atual
+
+    ATALHO PARA COPIAR E COLAR  UM TEXTO SELECIONADO:
+     < CTRL + C > #Copia o texto
+     < CTRL + V > #Cola  o texto
+
+    ATALHO PARA FECHAR O PROGRAMA ATUAL:
+     < ALT + F4 > #Fecha o programa Atual
+
+    ATALHO PARA CONTROLAR O DIMENSIONAMENTO DE UMA TELA:
+     < ALT + SPACEBAR > #abre uma tela onde se pode controlar
+ 
+    
+    
