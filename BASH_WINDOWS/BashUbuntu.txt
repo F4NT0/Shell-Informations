@@ -1,0 +1,78 @@
+ 
+ 	 Bash e um subsistema do linux e Ubuntu
+  que funciona dentro do sistema do windows 10 para poder
+  trabalhar como desenvolvedor, usando programas tanto do
+  linux quanto do Windows em um unico sistema. 
+ =====================================
+  COMO INSTALAR O BASH  NO WINDOWS 10
+ ======================================
+  1) clique ctrl + esc para abrir o menu iniciar
+  2) vá no botão "configurações"
+  3) clique no botão "Atualização e Segurança"
+  4) clique no botão "Para Desenvolvedores"
+  5) clique no botão "Modo de Desenvolvedor"
+  6) clique em sim
+  7) escreva na pesquisa do windows "Ativar ou Desativar recursos do
+     Windows" e clique na opção que aparecer
+  8) após abrir a tela da opção que tu procurou,procure a opção 
+      "Windows Subsystem for Linux" e a selecione
+  9) depois de selecionado e dar enter, deve aparecer uma tela dizendo
+     que as alterações foram concluidas
+  10) reinicie o computador
+  11) depois de reiniciado, clique no botão do windows + r e escreva bash
+  12) ele ira pedir para que voce baixe um sistema na windows
+      store, onde pode escolher se deseja ubuntu,linux,kali lindebian.
+  13) selecione o sistema que deseja e salve..  
+
+ =======================================
+  COMO ATUALIZAR O BASH NO WINDOWS 10
+ =======================================
+  1) abra o bash = botão windows + r e escreva bash
+  2) no terminal do ubunto escreva:
+        sudo apt-get update
+  3) se pedir senha, coloque a senha que vc fez, se não tiver senha ele
+     irá começar a atualização automaticamente
+  4) agora, depois de souber quais atualizações possui escreva:
+       sudo apt-get upgrade
+  5) selecione a letra S para aceitar que atualize
+  6) deixe terminar a atualização e quando terminar a atualização clique 
+     em exit.
+
+ ============================================
+ COMANDOS PARA O BASH NO TERMINAL DO BASH
+ ============================================
+  se estiver usando o linux e não o windows:
+  * para abrir o terminal do linux clique:  ctr + alt + t
+  * para limpar a tela do terminal escreva:  clear
+  * para sair do terminal escreva: exit
+  
+  ---------------------------------------------------------------------
+  se escrever VIM no terminal do linux(ubuntu) você inicia o editor de 
+  texto diretamente no terminal.
+  
+  dai para usar direitinho esse programa faça o seguinte:
+
+   1) abra o terminal: 
+        no bash do windows: botãodowindows + r e escreva bash
+        no linux: ctrl + alt + t  
+   2) use os comandos dir e cd para ir até a pasta onde deseja deixar
+      o arquivo
+   3) escreva no terminal dentro do diretório: 
+              vim + nomedoprograma.extensão
+   4) a extensão pode ser de uma linguagem que deseja ou txt
+   
+   5) quando abrir a tela do editor, para escrever clique na letra i
+   
+   6) depois de escrito tudo que deseja,para sair do modo escrita clique
+      no botão esc
+   7) para salvar o arquivo escrito e sair do vim escreva: :wq
+  -----------------------------------------------------------------------
+   
+  ===========================
+   RESUMO DE COMANDO DO VIM
+  ===========================
+
+  tecla i : dentro do VIM clicando em i tu libera para poder escrever
+  tecla esc : sai do modo de incersão de texto
+  :q : sai do VIM sem salvar
+  :wq : sai do VIM e salva o arquivo que voce editou
