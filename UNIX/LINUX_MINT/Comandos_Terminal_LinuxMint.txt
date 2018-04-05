@@ -1,4 +1,4 @@
- ====================================
+﻿ ====================================
  COMANDOS PARA TERMINAL NO LINUX MINT
  ====================================
   
@@ -77,4 +77,25 @@
            BAIXAR UM ARQUIVO DA INTERNET:
            -> wget nomearquivo
 
+        COMO DESCOMPACTAR UM ARQUIVO .DEB:
+        -> dpkg -i caminho/ate/o/arquivo
+
+        COMO SE CONECTAR COM A PENDRIVE PELO TERMINAL:
+         #quando conectado em sua conta no LAPRO:
+           * volte até antes do /home com "cd .."
+           * procure uma pasta chamada "media"
+           * utilize o comando "cd nomepasta" e siga os proximos passos
+           * conecte nela e procure seu numero de matricula
+           * encontre o nome de seu pendrive
+           * entre no seu pendrive
+
+              COMO ABRIR UMA TELA DE INTERFACE GRAFICA PELO TERMINAL:
+       -> xdg-open nomedir
+        #nomedir é o nome do diretorio que deseja abrir gráficamente
+        #Exemplo: xdg-open Downloads
+
+      COMO ABRIR UMA PÁGINA NA INTERNET PELO TERMINAL:
+       -> xdg-open caminhoparasite
+        #caminhoparasite é o caminho completo para o website
+        # exemplo: https://github.com
               
