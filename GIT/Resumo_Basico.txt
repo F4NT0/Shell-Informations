@@ -13,6 +13,9 @@
     DELETANDO UMA BRANCH:
      -> git branch -d nomedabranch
 
+    VERIFICANDO QUAL BRANCH EXISTEM:
+     -> git branch
+     # se aparecer em verde, significa que este é o branch que você se encontra
 
 
      REPOSITÓRIO DE DENTRO:
