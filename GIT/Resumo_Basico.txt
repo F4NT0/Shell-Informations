@@ -2,8 +2,13 @@
       RESUMO BÁSICO DE COMANDOS DO GIT
      =================================
 
+    VERIFICANDO TODAS AS BRANCHS REMOTAS DO PROJETO:
+     -> git branch -r
+
     CRIANDO BRANCH PARA TRABALHAR FORA DA MASTER:
-      -> git checkout -b nomedabranch
+      -> git checkout -b nomedabranch 
+     #Se criar uma branch dentro de uma branch e essa branch for remota
+     #ele irá baixar a branch parao seu projeto
       
       #irá criar uma branch e lhe enviar para lá
    
