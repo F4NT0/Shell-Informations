@@ -43,7 +43,7 @@
          -> ls # mostra todos os diretorios dentro do diretorio
          -> mkdir nomepasta #cria uma nova pasta
          -> rmdir nomepasta #deleta uma pasta
-         -> rm -r nomepasta #Deleta um diretorio inteiro com tudo dentro
+         -> rm -rf nomepasta #Deleta um diretorio inteiro com tudo dentro
 
          PARA COPIAR UM ARQUIVO PARA UM NOVO DIRETORIO:
          -> cp nomearquivo /home/nomepasta 
