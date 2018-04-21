@@ -1,0 +1,116 @@
+   -------------------------------------------
+    Programa para controlar Conflitos do GIT
+   --------------------------------------------
+
+
+  Para resolver um conflito em GIT se deve manualmente mexer no arquivo conflitante para poder verificar
+qual alteracao que foi feita e a melhor de se deixar no codigo, mas verificar um por um e muito esforco
+gasto,para isso existem programas que auxiliam a resolver esse problema.
+
+ irei fazer um tutorial de se usar o Diffmerge, que e um programa multiplataforma que apresenta quais sao as alteracoes 
+feitas no arquivo.
+
+
+------------------
+acessando o Site
+----------------
+
+ Site Oficial: sourcegear.com/diffmerge
+ Para baixar va na pagina Downloads
+
+
+
+ ----------------
+  Instalacao
+ ---------------
+
+
+  Ubuntu e linux Mint:
+
+   FORMA 1:  
+      1) Baixe do site do DiffMerge o arquivo de extensao .deb
+      2) instale com o seguinte comando no terminal: sudo dpkg -i nomedoarquivo.extensao
+      3) para desinstalar o programa coloque o seguinte codigo no terminal: sudo dpkg -r diffmerge
+
+  FORMA 2:
+      1) Crie um arquivo chamado sorcegear.list na seguinte localizacao:
+            /etc/apt/sources.list.d/sourcegear.list
+      2) Escreva o seguinte no arquivo:
+            deb http://debian.sourcegear.com/ubuntu "Ubuntu_Codename" main
+         
+         2.1) Se For Ubuntu:
+                 a) Ubuntu_Codename e a versao do ubuntu do sistema
+                 b) para conseguir a versao do sistema, escreva no terminal:
+                              lsb_release -c
+
+         2.2) Se For Linux-Mint:
+                 a) ubuntu_Codename e da versao do ubuntu onde o sistema mint foi baseado
+                      ex: linux mint 14 "Nadia" foi baseado no Ubuntu "quantal"
+
+      3) Adicione a chave para a APT da SourceGear da seguinte forma:
+           sudo wget -O - http://debian.sourcegear.com/SOURCEGEAR-GPG-KEY 
+              | sudo apt-key add -
+
+      4) Agora atualize a APT:  sudo apt-get update
+     
+      5) Agora por ultimo instale o Diffmerge: sudo apt-get install diffmerge
+
+
+  Microsoft Windows:
+
+    FORMA 1:
+      1) Verifique o tipo de windows que existem em seu computador (32 ou 64 bits)
+      2) Baixe o pacote MSI(Microsoft System Installer) 
+      3) Simplesmente clique no pacote e deixe ele fazer a instalacao no sistema 
+
+    FORMA 2:
+      1) baixe o Arquivo .zip do site do DiffMerge
+      2) Selecione o tipo de sistema operacional que voce esta usando
+      3) unzip o arquivo .zip
+      4) clique no programa sgdm.exe
+
+
+   Macintosh:
+
+     FORMA 1:
+       1) Baixe o programa com a extensao .pkg
+       2) clique no programa 
+       3) ele ira instalar o programa na pasta /applications
+       4) a localizacao dele na linha de comando e: /usr/local/bin/diffmerge
+       5) para ler o manual escreva no termial: man diffmerge
+
+     FORMA 2:
+       1) baixe o programa com a extensao .dmg
+       2) clique no programa
+       3) arraste o programa para a sua pasta /application
+       4) dessa forma voce pode baixar arquivos extras por linha de comando para o programa, como os seguintes:
+     
+           sudo cp Extras/diffmerge.sh /usr/local/bin/diffmerge
+           sudo chmod 755 /usr/local/bin/diffmerge
+           sudo cp Extras/diffmerge.1 /usr/share/man/man1/diffmerge.1
+           sudo chmod 644 /usr/share/man/man1/diffmerge.1
+
+
+   --------------------------------
+    Conectando o Programa com o GIT
+   --------------------------------
+
+     Ferramenta Diff:
+
+    git config --global --add diff.tool diffmerge
+    git config --global --add difftool.diffmerge.path "caminhopara o executavel"
+
+    Ferramenta Merge:
+  
+    git config --global --add merge.tool diffmerge
+    git config --gloal --add mergetool.diffmerge.path "caminho para o executavel"
+
+
+   para executar:
+
+     na pasta depois de aparecer a mensagem de conflito
+     escreva no terminal:  git mergetool ou git difftool
+
+
+     
+          
