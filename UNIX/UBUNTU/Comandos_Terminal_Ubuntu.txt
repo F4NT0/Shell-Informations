@@ -36,6 +36,7 @@
 
  COMO DELETAR UM DIRETORIO:
  -> rmdir nomediretorio
+ -> rm -rf nomediretorio #Se o diretorio não for vazio
 
  COMO LIMPAR A TELA DO TERMINAL:
  -> clear

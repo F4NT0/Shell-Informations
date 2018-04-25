@@ -1,4 +1,4 @@
-   ==================================
+﻿   ==================================
    COMANDOS PARA O TERMINAL DO DEBIAN
    ==================================
 
@@ -28,3 +28,41 @@
        -> xdg-open nomedir
         #nomedir é o nome do diretorio que deseja abrir gráficamente
         #Exemplo: xdg-open Downloads
+
+      COMO ABRIR UMA PÁGINA NA INTERNET PELO TERMINAL:
+       -> xdg-open caminhoparasite
+        #caminhoparasite é o caminho completo para o website
+        # exemplo: https://github.com
+
+      COMANDOS DE CONTROLE DE DIRETORIO:
+         -> cd nomepasta #troca de diretorio
+         -> ls # mostra todos os diretorios dentro do diretorio
+         -> mkdir nomepasta #cria uma nova pasta
+         -> rmdir nomepasta #deleta uma pasta
+         -> rm -rf nomepasta #deleta tudo o que tiver na pasta junto
+
+         PARA COPIAR UM ARQUIVO PARA UM NOVO DIRETORIO:
+         -> cp nomearquivo /home/nomepasta 
+         #tem que saber direitinho qual o caminho ate a pasta
+
+         PARA VER UM ARQUIVO NO TERMINAL:
+         -> cat nomearquivo
+         -> more nomearquivo #uma pagina por vez, use espaco
+
+         COMANDOS DE COMPRESSAO:
+
+           CRIAR ARQUIVO .TAR: 
+           -> tar cf nomedotar.tar arquivoparapornotar
+           
+	   EXTRAIR ARQUIVO .TAR: 
+           -> tar xf nomearquivo.tar
+
+           EXTRAIR ARQUIVO .TAR.GZ:
+           -> tar xzf nomearquivo.tar.gz
+
+           CRIAR ARQUIVO .GZ:
+           -> gzip nomearquivo #ele se torna um .gz
+
+           EXTRAIR ARQUIVO .GZ:
+           -> gzip -d nomearquivo.gz
+

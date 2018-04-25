@@ -2,8 +2,32 @@
       RESUMO BÁSICO DE COMANDOS DO GIT
      =================================
 
+     COMO RESOLVER UM CONFLITO DE ARQUIVO:
+       # Quando se faz um git pull e capaz de 
+       # acontecer um conflito nos arquivos e 
+       # no proprio arquivo aparece quais alteracoes foram feitas
+       # onde esta escrito HEAD e a informacao local de seu computador
+       # onde esta escrito um codigo e a alteracao do servidor
+       # abra o arquivo em conflito e delete aquela parte que nao deseja do codigo
+       # depois salve e faca um novo commit
+
+
+     
+     FAZENDO UM MERGE DO PROJETO:
+       # depois de fazer tudo que deseja em uma branch
+       # faca checkout na branch que deseja fazer o merge
+       # merge e conectar a inforacao de dois branchs em um principal
+       # depois de ir para o branch que deseja enviar a informacao, escreva:
+       -> git merge nomedobranch
+      #nomedobranch e a que voce estava trabalhando
+
+    VERIFICANDO TODAS AS BRANCHS REMOTAS DO PROJETO:
+     -> git branch -r
+
     CRIANDO BRANCH PARA TRABALHAR FORA DA MASTER:
-      -> git checkout -b nomedabranch
+      -> git checkout -b nomedabranch 
+     #Se criar uma branch dentro de uma branch e essa branch for remota
+     #ele irá baixar a branch parao seu projeto
       
       #irá criar uma branch e lhe enviar para lá
    
@@ -13,6 +37,9 @@
     DELETANDO UMA BRANCH:
      -> git branch -d nomedabranch
 
+    VERIFICANDO QUAL BRANCH EXISTEM:
+     -> git branch
+     # se aparecer em verde, significa que este é o branch que você se encontra
 
 
      REPOSITÓRIO DE DENTRO:
