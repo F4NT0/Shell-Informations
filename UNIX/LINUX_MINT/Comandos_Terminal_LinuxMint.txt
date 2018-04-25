@@ -38,6 +38,12 @@
          PARA LER O MANUAL DE UM COMANDO OU PROGRAMA:
          -> man nomedocomando
 
+         PARA NAVEGAR PELO TERMINAL, PARA LER TODAS AS INFORMAÇÕES:
+         -> SHITF + PAGEUP/PAGEDOWN
+         # PAGEUP e PAGEDOWN são dois botões do teclado
+         # suas siglas de teclado são: PAGEUP = PgUp,PAGEDOWN = PgDn 
+
+
          COMANDOS DE CONTROLE DE DIRETORIO:
          -> cd nomepasta #troca de diretorio
          -> ls # mostra todos os diretorios dentro do diretorio
