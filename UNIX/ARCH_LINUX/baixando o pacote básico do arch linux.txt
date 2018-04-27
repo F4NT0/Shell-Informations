@@ -1,0 +1,116 @@
+----------------------------------------
+ BAIXANDO O PACOTE BÁSICO DO ARCH LINUX
+----------------------------------------
+parte anterior: definindo a conexão wifi do arch linux
+
+1) Baixando o pacote básico do sistema pela internet
+      * Iremos baixar o pacote básico do sistema para podermos configurálo
+      * Iremos baixar a versão de desenvolvedor do sistema para facilitar a vida
+      * coloque o seguinte comando para instalar no root do sistema:
+         -> pacstrap /mnt base base-devel
+      * irá ser baixado todo o sistema básico do sistema arch linux 
+      * isso pode levar um bom tempo,então deixe rolando a instalação e vá tomar um café
+
+2) Configurando o pacote no sistema:
+    
+   2.1) Entrando no sistema root criado no nosso computador
+     * para o inicio da configuração, devemos nos conectar dentro do root
+     * o root que digo é o nossos sda2 que foi colocado no sistema
+     * temos que fazer logout do sistema bootavel da pendrive e entrar no nosso
+     * para entrarmos do root novo criado no computador use o seguinte comando:
+        -> arch-chroot /mnt
+   2.2) Criando uma senha para o sistema root
+       * agora que conectamos no sistema do roor, vamos criar uma senha
+       * para criar uma senha use o seguinte comando:
+              -> passwd
+       * Entre com a senha desejada 
+   2.3) Adicionando o local no sistema root
+           * para adicionar o local, devemos procurar por ele dentro sistema
+           * Use o seguinte comando para ativar a linguagem desejada:
+              -> nano /etc/locale.gen
+           * Procure por sua lingua na lista e retire o # inicial da linha
+           * retire dos dois que tenham a mesma sigla da lingua desejada
+           * como prefiro ingles, deixarei o sistema em ingles US
+              -> en_US.UTF-8 UTF-8
+              -> en_US ISO-8859-1 
+           * Para ativar essa alteração, digite:
+                -> locale-gen
+   2.4) Adicionando a time-zone onde você se encontra
+          * Para podermos usar o nosso horario daqui
+          * vá até a pasta onde estão todas as time-zones
+              -> cd /usr/share/zoneinfo
+          * digite ls para ver todas as timezones disponiveis
+          * conecte no diretório de sua zona de tempo:
+             -> cd /usr/share/zoneinfo/Brazil
+          * digite ls de novo para ver a localização final de onde voce se encontra
+          * no meu caso é East do Brazil
+          * Para definir como a sua time-zone, use o seguinte código
+          * como o meu é brazil ele fica assim:
+            -> ln -s /usr/share/zoneinfo/Brazil/East /etc/localtime
+
+   2.5) Criando um Hostname para o seu sistema
+           * Podemos colocar um nome para ser o hostname do sistema
+           * Coloque o seguinte comando
+              -> echo fanto > /etc/hostname
+           * O nome do hostname será fanto
+
+  2.6) Instalando o bootloader: 
+         * Bootloader é o que irá ler e iniciar o sistema boot no seu computador
+         * iremos utilizar o grub nessa instalação 
+         * devemos baixar o grub da internet, com o seguinte comando:
+              -> pacman -S grub-bios
+            não esqueça que o s é maiusculo
+         * Aceite a instalação e deixe baixando
+  2.7) Configurando o grub:
+          * depois de baixado sem erros, devemos instalar o grub no hard drive
+          * para instalar no hard drive o grub, coloque o seguinte comando:
+             -> grub-install /dev/sda
+          * nesse caso não é uma partição especifica e sim em todo ele 
+          * deixe instalar
+          * quando aparecer uma mensagem dizendo "no error reported" esta instalado
+
+  2.8) Criando arquivo init
+        * arquivo init é o arquivo que o grub irá usar para inciar nosso sistema
+        * toda a informação irá ficar nesse arquivo para iniciar o computador
+        * Como criar o arquivo init
+            -> mkinitcpio -p linux
+        * Deixe o sistema criar e carregar as informações 
+        * quando der a mensagem "Image generation sucessful" esta criado
+
+ 2.9) Criando o arquivo grub de configuração
+        * devemos criar esse arquivo no boot para poder configurar o grub
+        * para isso devemos usar o seguinte comando:
+          -> grub-mkconfig -o /boot/grub/grub.cfg
+        * deixe o sistema criar o arquivo 
+        * quando aparecer done significa que foi criado com sucesso
+ 
+ 3) Saia do sistema root 
+      * Depois de todos os passos dados acima e foram bem instalados
+      * podemos sair do nosso sistema root
+      * para sair do sistema root digite:
+          -> exit
+
+ 4) criando o arquivo fstab para tomar controle das partições do sistema
+     * isso deve ser criado fora do root, então siga todos os passos anteiores 
+        antes de mexer com esse arquivo
+     * para criar o arquivo fstab:
+         -> genfstab /mnt >> /mnt/etc/fstab
+     * se não aparecer nenhuma mensagem de erro, então o arquivo foi criado
+
+ 5) Desmonte o usb bootavel que foi colocado no sistema
+     * Agora estamos no final de nossa jornada
+     * agora iremos desmontar o /mnt com o seguinte comando
+           -> umount /mnt 
+     * se não aparecer erros então conseguiu desmontar 
+
+ 6) Reboot do sistema
+      * Se todos os passos anteriores foram feitos com sucesso iremos reiniciar o sistema
+      * para reiniciar o sistema usamos o seguinte comando:
+        -> reboot
+      * Quando o reboot estiver sendo feito, temos que tirar a pendrive bootavel
+      * Tire antes que o sistema inicie de novo
+
+
+----------------------------------------------------------
+ PRONTO, TODO O SISTEMA BÁSICO DO ARCH LINUX FOI INSTALADO
+----------------------------------------------------------

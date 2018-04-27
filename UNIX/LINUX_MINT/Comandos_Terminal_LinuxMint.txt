@@ -47,6 +47,7 @@
          COMANDOS DE CONTROLE DE DIRETORIO:
          -> cd nomepasta #troca de diretorio
          -> ls # mostra todos os diretorios dentro do diretorio
+         -> ls *.extensão #mostra somente os arquivos com a extensão expecifica
          -> mkdir nomepasta #cria uma nova pasta
          -> rmdir nomepasta #deleta uma pasta
          -> rm -rf nomepasta #Deleta um diretorio inteiro com tudo dentro

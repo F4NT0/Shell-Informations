@@ -1,0 +1,66 @@
+-------------------------------------
+ CONFIGURANDO WIRELESS NO ARCH LINUX
+-------------------------------------
+
+ 1) Descobrindo seu interface do wireless:
+     * Quando iniciar o arch linux coloque o seguinte comando no terminal:
+          -> iwconfig
+     * A interface é o código que aparece normalmente em segundo na lista 
+          ex: wlp2s0
+
+2) Coloque a interface em primeiro lugar:
+     * Para alterar a importancia da interface coloque o seguinte comando:
+           -> ip link set interface up
+         NOTA: no lugar de interface coloque o código dela:
+                 -> ip link set wlp2s0 up
+
+3) Faça um Scan da interface com o seguinte comando:
+      -> iwlist interface scan | less
+
+      ex: iwlist wlp2s0 scan | less
+
+4) Desligue o set da interface agora, da seguinte forma:
+      -> ip link set interface down
+
+5) Setup do WI-FI usando netctl:
+     5.1) rode o comando:
+           -> lspci -k
+     5.2) procure na lista que surgir o Network controller, se tiver então ele está
+          conseguindo ler o driver de wireless, se não tiver vá no seguinte link:
+              https://wireless.wiki.kernel.org/
+
+6) Instalando da Forma mais Dificil:
+    6.1) tenha anotado o código de sua interface que você descobriu mais cedo
+
+    6.2) vá até o diretorio examples do netctl:
+          -> cd /etc/netctl/examples
+
+    6.3) Copie o arquivo wireless-wpa para um arquivo novo chamado your_profile:
+          -> cp /etc/netctl/examples/wireless-wpa /etc/netctl/your_profile
+
+    6.4) Edite o arquivo usando o seguinte comando:
+          -> nano /etc/netctl/your_profile
+          
+    6.5) Altere os seguintes lugares:
+           Interface: código de sua interface descoberta antes
+           ESSID: o nome da internet que deseja conectar
+           key: a senha da internet que deseja conectar
+         Clique em CTRL + O para salvar e clique me enter
+         Clique em CTRL + X para sair                
+
+   6.6) Rode o netctl com o seguinte comando:
+        -> cd /etc/netctl
+        -> netctl start your_profile
+
+   6.7) Se aparecer uma mensagem de erro, coloque o seguinte comando:
+         -> ip link set dev interface down
+          interface sendo o código da interface descoberto antes 
+
+   6.8) Para testar, escreva o seguinte no terminal:
+         -> ping -c 3 www.google.com
+        Se aparecer que esta rodando e aparecer 3 64 bytes... 
+        significa que está funcionando
+
+  6.9) Para deixar essa conexão salva e funcionando, coloque o seguinte:
+        -> netctl enable your_profile
+

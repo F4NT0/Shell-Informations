@@ -1,0 +1,70 @@
+--------------------------------------------------------
+ FORMATANDO O ANTIGO SISTEMA PARA COLOCAR O ARCH LINUX
+---------------------------------------------------------
+PASSO ANTERIOR: Instalando a ISO e iniciando a pendrive bootavel no computador
+
+1) Primeiramente defina qual layout de teclado deseja usar no seu computador:
+    teclado brasileiro: br-abnt2.map.gz
+   Comando para definir o teclado como o teclado desejado:
+       -> loadkeys br-abnt2.map.gz
+
+
+2) Verificando todas as partições do Disco:
+         -> fdisk -l 
+      * Todos os resultados com rom,loop e airoot devem ser ignorados
+      * rom,loop e airoot são partes essenciais para o sistema
+      * O disco do sistema normalmente são os que terminam como sda
+      * ex: /dev/sda1 normalmente é o principal, mas pode ser diferente
+      * tome cuidado para que não formate o disco errado, como a pendrive por exemplo
+
+3) usando o cfdisk para formatação e criação de partições
+     * iremos usar um programa que já vem junto com  o sistema chamado cfdisk
+     * para iniciar o cfdisk com as partições que desejamos formatar:
+        ->  cfdisk /dev/sda
+     * ele irá iniciar uma nova tela onde irá apresentar todas as partições sda
+  3.1) SE ESTIVER QUERENDO INSTALAR O ARCH LINUX COMO UNICO SO, DELETE TODAS AS PARTIÇÕES SDA
+           * para remover, selecione a partição e clique em remove
+           * quando aparecer escrito free space significa que deu certo
+  3.2) Iremos criar duas partições:
+          a) swap partition: devemos colocar a metade da RAM nessa 
+          b) todo o resto do espaço coloque em uma segunda partição
+  3.3) organizando as partições
+         a) a partição de maior espaço deve se tornar BOOTABLE clicando nessa opção
+         b) para tornar a outra partição em swap:
+               * selecione a partição que foi feita primeiro
+               * vá na opção type
+               * selecione a opção 82 para tornar em uma partição swap de linux
+  3.4) fechando a contrução das partições
+           * depois de bem definido como mostrado acima, vá na opção write
+           * clique no botão y para confirmar as alterações
+           * vai aparecer uma mensagem embaixo dizendo que foi alterado
+  3.5) e por ultimo: SE LEMBRE QUAL É A SWAP E QUAL É BOOT
+         * selecione o quit para sair
+
+4) formatando as partições:
+   4.1) Formatando a partição BOOT 
+     * queremos formatar usando o extension4 que é uma extensão de file system
+     * queremos formatar dessa forma a partição que será o ROOT, ou seja a partição BOOT
+     * como no meu caso é a partição 2, segue o seguinte comando:
+          -> mkfs.ext4 /dev/sda2
+     * Leva um tempo para formatar o sistema e colocar como ext4
+    
+   4.2) Montando a partição BOOT
+       * devemos montar a partição na pasta /mnt para podermos acessar o root no sistema
+       * Utilize o seguinte comando para montar (lembre-se que é a partição boot)
+       * no meu caso a boot é o sda2, então:
+          -> mount /dev/sda2 /mnt
+   4.3) Criando um arquivo swap dentro da partição swap
+         * Devemos criar um arquivo swap dentro da partição sda que é a swap
+         * no meu caso a partição swap é a sda1
+         * para construir o arquivo swap, usamos o comando mkswap:
+             -> mkswap /dev/sda1
+   4.4) Ativando o arquivo swap dentro da partição
+         * devemos agora ativar o arquivo swap que criamos
+         * Para isso usamos o comando swapon
+         * Como minha partição é sda1
+            -> swapon /dev/sda1
+
+-----------------------------------------
+ PRONTO, parte de formatação esta pronta!
+----------------------------------------
