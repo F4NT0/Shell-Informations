@@ -1,12 +1,12 @@
 ----------------------------
- CONFIGURA«√O DO ARCH LINUX
+ CONFIGURA√á√ÉO DO ARCH LINUX
 ----------------------------
-Esses comandos sÛ podem ser feitos depois de instalado o sistema arch
+Esses comandos s√≥ podem ser feitos depois de instalado o sistema arch
 Verifique se configurou a internet para poder seguir os passos
 
 conectando no arch depois de instalado:
   arch login: root
-  Password: senha criada na instalaÁ„o
+  Password: senha criada na instala√ß√£o
 
 1) Configurando o layout do teclado no sistema:
     * Para alterar temporariamente:
@@ -16,27 +16,31 @@ conectando no arch depois de instalado:
     * copie exatamente como acima!
 
 2) Criando uma conta de User
-      * … aconselhado a criar uma conta User
-      * Serve para seguranÁa,para n„o deletar sem querer o seu arch
+      * √â aconselhado a criar uma conta User
+      * Serve para seguran√ßa,para n√£o deletar sem querer o seu arch
       * Para criar uma conta use o seguinte comando:
         -> useradd -m -g users -s /bin/bash nomeDesejado
-      * nomeDesejado ser· o seu nome como usu·rio
-      * Agora devemos possuir uma senha para o Usu·rio
-      * Definindo uma senha para o usu·rio:
+      * nomeDesejado ser√° o seu nome como usu√°rio
+      * Agora devemos possuir uma senha para o Usu√°rio
+      * Definindo uma senha para o usu√°rio:
          -> passwd nomeDesejado
-      * nomeDesejado È o nome que voce escolheu para seu user
-  2.1) Dando privilÈgios para seu User
-         * em sua conex„o de root, baixe o pacote sudo
-           -> pacman -S sudo
+      * nomeDesejado √© o nome que voce escolheu para seu user
       
+2.1) Dando privil√©gios para seu User
+         -> nano /etc/sudoers
+        * v√° at√© a parte de User Privilegies specification
+        * Encontre o root ALL=(ALL) ALL
+        * Abaixo coloque o nome do User e copie o que esta escrito depois como acima
+        salve com CTRL + O e depois salve com CTRL + X
+        
 3) Disponibilizando o pacote pacman para o sistema:
      * depois de instalado devemos disponibilizar o pacote pacman
      * para isso iremos no arquivo pacman.conf
          -> nano /etc/pacman.conf
-     * procure pela linha com o inicio [multilib] (N√O È a [multilib-testing])
-     * tire o # do inicio do multilib e todos conectados com ele antes do espaÁo dado
+     * procure pela linha com o inicio [multilib] (N√ÉO √© a [multilib-testing])
+     * tire o # do inicio do multilib e todos conectados com ele antes do espa√ßo dado
      * Clique em CTRL + O para salvar e CTRL + X para sair  
 4) utilizando o pacman para atualizar o sistema:
         -> pacman -Syu
-      * Este comando ir· atualizar o sistema
+      * Este comando ir√° atualizar o sistema
       
