@@ -1,0 +1,42 @@
+----------------------------
+ CONFIGURAÇÃO DO ARCH LINUX
+----------------------------
+Esses comandos só podem ser feitos depois de instalado o sistema arch
+Verifique se configurou a internet para poder seguir os passos
+
+conectando no arch depois de instalado:
+  arch login: root
+  Password: senha criada na instalação
+
+1) Configurando o layout do teclado no sistema:
+    * Para alterar temporariamente:
+     -> loadkeys br-abnt2.map.gz
+    * Para alterar permanentemente:
+-> echo -e "KEYMAP=br-abnt2\nFONT=Lat2-Terminus16\nFONT_MAP=" > /etc/vconsole.conf
+    * copie exatamente como acima!
+
+2) Criando uma conta de User
+      * É aconselhado a criar uma conta User
+      * Serve para segurança,para não deletar sem querer o seu arch
+      * Para criar uma conta use o seguinte comando:
+        -> useradd -m -g users -s /bin/bash nomeDesejado
+      * nomeDesejado será o seu nome como usuário
+      * Agora devemos possuir uma senha para o Usuário
+      * Definindo uma senha para o usuário:
+         -> passwd nomeDesejado
+      * nomeDesejado é o nome que voce escolheu para seu user
+  2.1) Dando privilégios para seu User
+         * em sua conexão de root, baixe o pacote sudo
+           -> pacman -S sudo
+      
+3) Disponibilizando o pacote pacman para o sistema:
+     * depois de instalado devemos disponibilizar o pacote pacman
+     * para isso iremos no arquivo pacman.conf
+         -> nano /etc/pacman.conf
+     * procure pela linha com o inicio [multilib] (NÃO é a [multilib-testing])
+     * tire o # do inicio do multilib e todos conectados com ele antes do espaço dado
+     * Clique em CTRL + O para salvar e CTRL + X para sair  
+4) utilizando o pacman para atualizar o sistema:
+        -> pacman -Syu
+      * Este comando irá atualizar o sistema
+      
