@@ -1,0 +1,22 @@
+------------------------------------------
+ COMANDOS BÁSICOS DO ARCH LINUX
+-------------------------------------------
+
+ Instalando algun programa no SO:
+    pacman -S nomePrograma
+    # nomePrograma é o nome do programa que se descobre pela internet
+ 
+ Desisnstalando um programa específico:
+    pacman -R nomePrograma
+    # Saiba o nome do programa que deseja desinstalar
+    
+ 
+ Instalando o Java e o Compilador para programas em Java:
+    instalando o java: pacman -S jre9-openjdk
+    instalando o compilador: pacman -S jdk9-openjdk
+  Depois de instalados, é só fazer as etapas de compilação
+  
+ 
+ 
+  
+
