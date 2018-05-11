@@ -46,3 +46,10 @@
          Para voltar e continuar o projeto onde parou: -> tmux attach
 
          Se deseja sair e acabar o que estava fazendo: -> exit #fecha telas dentro tambem
+
+  COMO ABRIR UMA NOVA JANELA NO TMUX:
+      <CTRL + B> e depois selecione <C>
+
+ COMO VER QUANTAS JANELAS ESTAO ABERTAS:
+      <CTRL + B> e depois selecione <F> e clique em <ENTER>
+ 

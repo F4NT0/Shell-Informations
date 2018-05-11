@@ -1,0 +1,12 @@
+---------------------------------------------
+Programas Baixados no Arch_Linux e seus Usos
+---------------------------------------------
+
+git: pacman -S git : serve para controlar versoes de projetos
+sudo: pacman -S sudo : serve para entregar permicao de administrador para Users
+dialog: pacman -S dialog : serve para rodar o programa do wifi-menu para codificar o wifi
+networkManager: pacman -S networkmanager : serve para controlar qual conexao com a rede esta ativa
+iw: pacman -S iw :  e um pacote de rede para configurar a internet
+wpa_configuration: pacman -S wpa_configuration : outro pacote para configurar a internet
+htop: pacman -S htop : serve para ver o que esta rodando no sistema e gasto de memoria
+acpi: pacman -S acpi : serve para ver informacoes da bateria do computador

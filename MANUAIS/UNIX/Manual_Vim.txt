@@ -17,3 +17,31 @@ escrever no programa
 ESC para terminar de escrever.
   4) para que grave e salve o arquivo escreva: :wq 
      obs: com os dois pontos e tudo
+
+
+ CONFIGURANDO O VIM:
+
+ O vim Ãe extremamente configuravel, podemos fazer muitas coisas nele.
+ E recomendado versionar as alteracoes para evitar que se perca as 
+alteracoes feitas.
+ Para isso se cria uma pasta oculta Vim como abaixo:
+    1) cd ~
+    2) mkdir .vim
+    3) cd ..vim
+    4) touch vimrc
+    5) git init 
+ Agora, volte para o home directory(cd ~) e vamor conectar com o arquivo 
+vimrc do sistema:
+     ln -s ~/.vim/vimrc ~/.vimrc
+
+ Escolhendo um tema para seu VIM:
+    1) escolha um tema desejado na internet
+    2) crie o arquivo color no seu diretorio .vim
+         mkdir ~/.vim/colors
+    3) clone o repositorio do GITHUB do tema desejado
+    4) copie o arquivo dentro da pasta colors do tema para a pasta colors do 
+nosso arquivo criado no home directory
+    5) agora edite o arquivo .vimrc adicionando as seguintes linhas:
+         filetype on
+         syntax on 
+         colorscheme nomedotema 
