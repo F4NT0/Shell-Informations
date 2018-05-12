@@ -21,7 +21,7 @@ ESC para terminar de escrever.
 
  CONFIGURANDO O VIM:
 
- O vim �e extremamente configuravel, podemos fazer muitas coisas nele.
+ O vim Ãe extremamente configuravel, podemos fazer muitas coisas nele.
  E recomendado versionar as alteracoes para evitar que se perca as 
 alteracoes feitas.
  Para isso se cria uma pasta oculta Vim como abaixo:
@@ -45,3 +45,9 @@ nosso arquivo criado no home directory
          filetype on
          syntax on 
          colorscheme nomedotema 
+         
+COMANDOS UTEIS PARA O VI ou VIM:
+
+CLICANDO DUAS VEZES D : deleta uma linha inteira
+ClCANDO EM U: volta as alterações que foram feitas
+
