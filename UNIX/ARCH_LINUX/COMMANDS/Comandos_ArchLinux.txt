@@ -1,0 +1,15 @@
+===========================
+ COMANDOS PARA O ARCH LINUX
+===========================
+
+---------------------------------------
+INSTALAÇÃO E DESINSTALAÇAO DE PROGRAMAS
+---------------------------------------
+
+-> INSTALANDO ALGUM PROGRAMA NO ARCH LINUX:
+       -> $ pacman -S nomeprograma
+
+-> DESINSTALANDO ALGUM PROGRAMA NO ARCH LINUX:
+       -> $ pacman -R nomeprograma
+
+

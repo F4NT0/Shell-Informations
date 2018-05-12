@@ -1,0 +1,121 @@
+﻿====================================
+COMANDOS PARA TERMINAL NO LINUX MINT
+====================================
+
+# Este arquivo foi construido a partir do Template encontrado no arquivo Guia_Simbolos.md
+  
+------------------------
+ INFORMACOES DO SISTEMA:
+------------------------
+
+ -> VERIFICAR DATA E TEMPO ATUAL: 
+     -> $ date
+    
+ -> PARA SABER QUEM ESTA ONLINE NO SISTEMA: 
+     -> $ w
+     	
+ -> PARA SABER DE QUEM E O COMPUTADOR LINUX:
+      -> $ whoami
+    
+ -> PARA SABER A INFORMACAO DO KERNEL: 
+      -> $ uname -a
+    
+ -> PARA SABER A INFORMACAO DO CPU E MEMORIA:
+      -> $ cat/proc/cpuinfo 
+           -> #apresenta informacao do CPU
+      -> $ cat/proc/meminfo 
+           -> #apresenta informacao da Memoria
+    
+ -> PARA SABER O QUANTO JA FOI USADO DO DISCO:
+         -> $ df -h
+     
+ -> PARA LER O MANUAL DE UM COMANDO OU PROGRAMA:
+         -> $ man nomedocomando
+         -> $ man nomedoprograma
+
+ -> PARA NAVEGAR PELO TERMINAL, PARA LER TODAS AS INFORMAÇÕES:
+         -> <SHIFT> + <PAGEUP>/<PAGEDOWN>
+         # suas siglas de teclado são: PAGEUP = PgUp , PAGEDOWN = PgDn 
+
+------------------------------------
+ COMANDOS DE CONTROLE DE DIRETORIO:
+-------------------------------------
+-> PARA MUDAR DE DIRETORIO:         
+         -> $ cd nomediretorio 
+           
+-> PARA MOSTRAR OS ARQUIVOS E DIRETORIOS DO DIRETORIO ATUAL:
+         -> $ ls 
+            
+-> PARA MOSTRAR TODOS OS ARQUIVOS COM EXTENSAO ESPECIFICA:  
+         -> $ ls *.extensão 
+             
+-> PARA CRIAR UM DIRETORIO NOVO:
+         -> $ mkdir nomediretorio 
+               
+-> PARA DELETAR UM DIRETORIO VAZIO:
+         -> $ rmdir nomediretorio
+
+-> PARA DELETAR UM DIRETORIO COM INFORMAÇÕES:
+         -> $ rm -rf nomediretorio 
+               -> # ATENÇÃO: É DELETADO TUDO DE DENTRO
+
+ -> PARA COPIAR UM ARQUIVO PARA UM NOVO DIRETORIO:
+         -> cp nomearquivo /home/nomepasta 
+              -> #tem que saber EXATAMENTE qual o caminho ate a pasta
+
+ -> PARA LER UM ARQUIVO NO TERMINAL:
+         -> cat nomearquivo
+         -> more nomearquivo
+             -> #uma pagina por vez, use espaco
+
+----------------------- 
+COMANDOS DE COMPRESSAO:
+-----------------------
+
+ -> PARA CRIAR UM ARQUIVO .TAR: 
+         -> tar cf nomedotar.tar arquivoparapornotar
+        
+ -> EXTRAIR ARQUIVO .TAR: 
+         -> tar xf nomearquivo.tar
+
+ -> EXTRAIR ARQUIVO .TAR.GZ:
+         -> tar xzf nomearquivo.tar.gz
+
+ -> CRIAR ARQUIVO .GZ:
+         -> gzip nomearquivo #ele se torna um .gz
+
+ -> EXTRAIR ARQUIVO .GZ:
+         -> gzip -d nomearquivo.gz
+
+----------------------------         
+COMANDOS DE CONEXAO NETWORK:
+----------------------------
+
+ -> LISTAR TODOS OS IPS DAS MAQUINAS LOCAIS:
+         -> ifconfig
+
+ -> BAIXAR UM ARQUIVO DA INTERNET:
+         -> wget nomearquivo
+
+ -> COMO DESCOMPACTAR UM ARQUIVO .DEB:
+         -> dpkg -i caminho/ate/o/arquivo
+
+ COMO SE CONECTAR COM A PENDRIVE PELO TERMINAL:
+         #quando conectado em sua conta no LAPRO:
+           * volte até antes do /home com "cd .."
+           * procure uma pasta chamada "media"
+           * utilize o comando "cd nomepasta" e siga os proximos passos
+           * conecte nela e procure seu numero de matricula
+           * encontre o nome de seu pendrive
+           * entre no seu pendrive
+
+              COMO ABRIR UMA TELA DE INTERFACE GRAFICA PELO TERMINAL:
+       -> xdg-open nomedir
+        #nomedir é o nome do diretorio que deseja abrir gráficamente
+        #Exemplo: xdg-open Downloads
+
+      COMO ABRIR UMA PÁGINA NA INTERNET PELO TERMINAL:
+       -> xdg-open caminhoparasite
+        #caminhoparasite é o caminho completo para o website
+        # exemplo: https://github.com
+              

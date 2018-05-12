@@ -1,43 +1,68 @@
  
-BEM VINDO AO MEU REPOSITORIO DE INFORMACOES
+# BEM VINDO AO MEU REPOSITORIO DE INFORMACOES SOBRE SHELL CLI
 
-WELCOME TO MY INFORMATIONAL REPOSITORY
+# WELCOME TO MY INFORMATIONAL REPOSITORY ABOUT SHELL CLI
 
 
 
   Este repositorio do GITHUB foi criado para eu facilmente controlar todas as informacoes sobre o meu conhecimento de Shells CLI (Command-Line Interface) para eu poder ter um controle de todos os comandos uteis e atalhos de teclados que agilizem o meu trabalho com cada Sistema Operacional que eu utilizar ou surgir mais para a frente.
 
-  Como e muita informacao irei utilizar varios tipos de documentos diferentes para poder controlar o fluxo de informacao que irei atualizando no sistema, assim fica mais facil para que eu possa recuperar a informacao mais rapido e agil.
+  Como é muita informacao irei utilizar varios tipos de documentos diferentes para poder controlar o fluxo de informacao que irei atualizando no sistema, assim fica mais facil para que eu possa recuperar a informacao mais rápido e ágil.
 
-  Se alguem necessitar dessa informacao sinta-se livre para baixar e se conhecer novos comandos
- ou atalhos ou ate mesmo programas que nao estao nos arquivos, por favor me mande um e-mail com
- as informacoes por escrito ou pelo menos o nome e para que servem!
+  Se alguem necessitar dessa informacao sinta-se livre para baixar e se conhecer novos comandos,atalhos ou ate mesmo programas que nao estao nos arquivos, por favor me mande um e-mail com as informacoes por escrito ou pelo menos o nome e para que servem!
 
   e-mail para contato: fantoshellcli@gmail.com
 
 
-  Tipos de Documentos que serao colocados aqui:
+## ORGANIZAÇÃO DO REPOSITÓRIO
     
-       WINDOWS: 
+* WINDOWS: diretório sobre informações sobre o Shell do Windows 
 
-      * Comandos para o Prompt de Comando do Windows
-      * Comandos para o PowerShell do Window
-      * Manual sobre o Bash
-      * Manual de Utilidades do CMD
+    * COMMAND_PROMPT: neste Diretório fica as informações do Prompt de Comando
+         |
+         |-> CMD_USES: neste diretório ficam utilidades do que fazer no prompt
+         |-> COMMANDS: neste diretório ficam os comandos básicos do prompt
 
-      SO LIVRES:
+    * POWERSHELL: neste diretório ficas as informações do POWERSHELL
+         |
+         |-> POWERSHELL_USES: neste diretório ficam utilidades do que fazer no powershell 
+         |-> COMMANDS: neste diretório ficam os comandos básicos do powershell 
 
-      * Comandos para o Terminal do Linux
-      * Comandos para o Terminal de varios SO livres (tratados pelos seus nomes)
-      * Manual de Instalacoes e Gerenciadores de Aplicacoes
-   
+    * UNIX: diretório sobre informações sobre o Shell do Núcleo UNIX
+         |
+         |-> LINUX_MINT: neste diretório ficam as informaçoes do linux mint
+         |      |
+         |      |-> COMMANDS: diretório com o arquivo de comandos
+         |      |-> PROGRAMS: diretório de programas para o shell do linux mint
+         |      |-> SHELL_USES: diretório com utilidades do que fazer no shell
+         |
+         |-> UBUNTU: neste diretório ficas as informações do Ubuntu     
+         |      |
+         |      |-> COMMANDS: diretório com o arquivo de comandos
+         |      |-> PROGRAMS: diretório de programas para o shell do linux mint
+         |      |-> SHELL_USES: diretório com utilidades do que fazer no shell
+         |
+         |-> DEBIAN: neste diretório ficam as informações do Debian
+         |      |
+         |      |-> COMMANDS: diretório com o arquivo de comandos
+         |      |-> PROGRAMS: diretório de programas para o shell do linux mint
+         |      |-> SHELL_USES: diretório com utilidades do que fazer no shell
+         |
+         |-> ARCH_LINUX: neste diretório ficam as informações do Arch Linux     
+         |      |
+         |      |-> COMMANDS: diretório com o arquivo de comandos
+         |      |-> PROGRAMS: diretório de programas para o shell do linux mint
+         |      |-> SHELL_USES: diretório com utilidades do que fazer no shell
+         |      |-> INSTALLATION: diretório de informações de como instalar o Arch
 
-      MACOSX:
-
-      * Comandos para o Terminal Natural do MACOSX
-      * Comandos para o Iterm2 e Iterm3
-      * Comandos e Informacao sobre o HOMEBREW
+    * MACOSX:
+         |
+         |-> COMMANDS: diretório com o arquivo de comandos
+         |-> PROGRAMS: diretório de programas para o shell do linux mint
+         |-> SHELL_USES: diretório com utilidades do que fazer no shell
      
+    * GIT:
+       
 
       ATALHOS:
 
