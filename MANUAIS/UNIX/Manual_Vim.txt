@@ -6,48 +6,44 @@
 se consegue escrever programas e textos comuns,somente usando
 a extensao desejada e pronto!
 
- como construir um arquivo pelo terminal:
-    vim nomeprograma.extensao
+----------------------------
+ COMO TRABALHAR NO VI E VIM 
+----------------------------
+ 1) Depois de entrado no arquivo, para escrever deve clicar no botão <I> do seu teclado,iniciando assim a opção de INSERÇÃO no arquivo
+ 2) Depois de escrever o que deseja, para sair do arquivo se deve fazer o seguinte:
+     2.1) Depois de escrever, clique em <ESC> para sair do modo de Inserção
+     2.2) Clique no botão <:> e escreva <wq> para salvar
+          # <w> serve para escrever o arquivo (write)
+          # <q> serve para sair do editor (quit)
+          # Os dois juntos servem para salvar o arquivo e fechar o editor
 
-  1) quando for criar um arquivo, saiba qual a pasta onde voce
-esta e se essa pasta e onde voce deseja.
-  2) quando abrir o programa, clique no botao I para poder 
-escrever no programa
-  3) quando terminar de escrever o que deseja, clique na tecla
-ESC para terminar de escrever.
-  4) para que grave e salve o arquivo escreva: :wq 
-     obs: com os dois pontos e tudo
 
-
- CONFIGURANDO O VIM:
-
- O vim Ãe extremamente configuravel, podemos fazer muitas coisas nele.
- E recomendado versionar as alteracoes para evitar que se perca as 
-alteracoes feitas.
- Para isso se cria uma pasta oculta Vim como abaixo:
-    1) cd ~
-    2) mkdir .vim
-    3) cd ..vim
-    4) touch vimrc
-    5) git init 
- Agora, volte para o home directory(cd ~) e vamor conectar com o arquivo 
-vimrc do sistema:
-     ln -s ~/.vim/vimrc ~/.vimrc
-
- Escolhendo um tema para seu VIM:
-    1) escolha um tema desejado na internet
-    2) crie o arquivo color no seu diretorio .vim
-         mkdir ~/.vim/colors
-    3) clone o repositorio do GITHUB do tema desejado
-    4) copie o arquivo dentro da pasta colors do tema para a pasta colors do 
-nosso arquivo criado no home directory
-    5) agora edite o arquivo .vimrc adicionando as seguintes linhas:
-         filetype on
-         syntax on 
-         colorscheme nomedotema 
-         
+--------------------------------         
 COMANDOS UTEIS PARA O VI ou VIM:
+--------------------------------
 
-CLICANDO DUAS VEZES D : deleta uma linha inteira
-ClCANDO EM U: volta as alterações que foram feitas
+OBS: ESTES COMANDOS DEVEM SER FEITOS FORA DO MODO DE INSERÇAO
 
+-> DELETAR UMA LINHA INTEIRA: CLIQUE DUAS VEZES EM <D>
+-> DESFAZER UMA MODIFICAÇÃO: CLIQUE NO BOTÃO <U>
+
+-> COPIAR UM TEXTO: 
+       -> CLIQUE EM <V> PARA SELECIONAR O TEXTO (MINUSCULO: LETRA POR LETRA)
+                                                (MAIUSCULO: LINHA POR LINHA)
+       -> MOVA ATÉ ONDE SE DESEJA SELECIONAR
+       -> CLIQUE EM <Y> MINUSCULO PARA COPIAR TODO O TEXTO SELECIONADO
+
+-> DELETAR UM TEXTO:
+       -> CLIQUE EM <V> PARA SELECIONAR O TEXTO (MINUSCULO: LETRA POR LETRA)
+                                                (MAIUSCULO: LINHA POR LINHA)
+       -> MOVA ATÉ ONDE SE DESEJA DELETAR
+       -> CLIQUE EM <D> MINUSCULO PARA DELETAR TODO O TEXTO SELECIONADO
+
+-> COLAR UM TEXTO:
+       -> CLIQUE EM <V> PARA SELECIONAR O TEXTO (MINUSCULO: LETRA POR LETRA)
+                                                (MAIUSCULO: LINHA POR LINHA)
+       -> MOVA ATÉ ONDE SE DESEJA COLAR
+       -> CLIQUE EM <P> PARA COLAR O TEXTO (MINUSCULO: DEPOIS DO CURSOR)
+                                           (MAIUSCULO: ANTES  DO CURSOR) 
+          
+          

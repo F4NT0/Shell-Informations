@@ -6,7 +6,7 @@
     pacman -S nomePrograma
     # nomePrograma é o nome do programa que se descobre pela internet
  
- Desisnstalando um programa específico:
+ Desinstalando um programa específico:
     pacman -R nomePrograma
     # Saiba o nome do programa que deseja desinstalar
     
@@ -17,6 +17,20 @@
   Depois de instalados, é só fazer as etapas de compilação
   
  
- 
+ Alterando a Linguagem do Computador:
+   1) Quando iniciar o sistema entre na pasta /etc/locale.gen
+   2) procure pela linguagem desejada no sistema
+      Em ingles = en_US.UTF-8 UTF-8
+      Em portugues = pt_BR.UTF-8 UTF-8
+   3) retire o # que aparece no inicio da linha
+   4) salve e feche o arquivo
+   5) crie o arquivo locale.conf da seguinte forma:
+       -> sudo nano /etc/locale.conf
+   6) escreva dentro do arquivo o seguinte:
+       -> LANG=pt_BR.UTF-8
+   7) salve e feche o arquivo
+   8) Ative o arquivo da seguinte forma:
+      -> localectl set-locale LANG=pt_BR.UTF-8
+   9) Reinicie o sistema	    
   
 
