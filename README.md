@@ -19,50 +19,91 @@
 * WINDOWS: diretório sobre informações sobre o Shell do Windows 
 
     * COMMAND_PROMPT: neste Diretório fica as informações do Prompt de Comando
+         
          |
+         
          |-> CMD_USES: neste diretório ficam utilidades do que fazer no prompt
+         
          |-> COMMANDS: neste diretório ficam os comandos básicos do prompt
 
     * POWERSHELL: neste diretório ficas as informações do POWERSHELL
+         
          |
+         
          |-> POWERSHELL_USES: neste diretório ficam utilidades do que fazer no powershell 
          |-> COMMANDS: neste diretório ficam os comandos básicos do powershell 
 
     * UNIX: diretório sobre informações sobre o Shell do Núcleo UNIX
+         
          |
+         
          |-> LINUX_MINT: neste diretório ficam as informaçoes do linux mint
+         
          |      |
+         
          |      |-> COMMANDS: diretório com o arquivo de comandos
+         
          |      |-> PROGRAMS: diretório de programas para o shell do linux mint
+         
          |      |-> SHELL_USES: diretório com utilidades do que fazer no shell
+         
          |
+         
          |-> UBUNTU: neste diretório ficas as informações do Ubuntu     
+         
          |      |
+         
          |      |-> COMMANDS: diretório com o arquivo de comandos
+         
          |      |-> PROGRAMS: diretório de programas para o shell do linux mint
+         
          |      |-> SHELL_USES: diretório com utilidades do que fazer no shell
+         
          |
+         
          |-> DEBIAN: neste diretório ficam as informações do Debian
+         
          |      |
+         
          |      |-> COMMANDS: diretório com o arquivo de comandos
+         
          |      |-> PROGRAMS: diretório de programas para o shell do linux mint
+         
          |      |-> SHELL_USES: diretório com utilidades do que fazer no shell
+         
          |
+         
          |-> ARCH_LINUX: neste diretório ficam as informações do Arch Linux     
+         
          |      |
+         
          |      |-> COMMANDS: diretório com o arquivo de comandos
+         
          |      |-> PROGRAMS: diretório de programas para o shell do linux mint
+         
          |      |-> SHELL_USES: diretório com utilidades do que fazer no shell
+         
          |      |-> INSTALLATION: diretório de informações de como instalar o Arch
 
-    * MACOSX:
+    * MACOSX: neste diretório ficam as infomações do Macbook
+         
          |
+         
          |-> COMMANDS: diretório com o arquivo de comandos
+         
          |-> PROGRAMS: diretório de programas para o shell do linux mint
+         
          |-> SHELL_USES: diretório com utilidades do que fazer no shell
      
     * GIT:
        
+       |
+       
+       |-> INSTALL: diretório de instalação do GIT
+     
+       |-> MERGE_TOOL: diretório de info sobre merge
+     
+       |-> RESUME: diretório de informaçao sobre GIT
 
       ATALHOS:
 
