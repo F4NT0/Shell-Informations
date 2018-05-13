@@ -1,0 +1,13 @@
+# ESTE ARQUIVO É OCULTO
+# PARA ABRIR ELE EM SEU LINUX: sudo nano ~/.vimrc
+
+# COPIE AS INFORMAÇÕES ABAIXO NO SEU ARQUIVO DO COMPUTADOR
+
+# TIPO DE ARQUIVO ATIVADO
+filetype on
+# SINTAXE DE PROGRAMAÇÃO ATIVADO
+syntax on
+# TEMA DO VIM
+colorscheme synthwave
+# COR DAS LETRAS DO .TXT DO VIM
+highlight Normal ctermfg=green

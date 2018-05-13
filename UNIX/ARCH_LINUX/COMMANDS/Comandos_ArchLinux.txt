@@ -12,4 +12,9 @@ INSTALAÇÃO E DESINSTALAÇAO DE PROGRAMAS
 -> DESINSTALANDO ALGUM PROGRAMA NO ARCH LINUX:
        -> $ pacman -R nomeprograma
 
+------------------------------------
+ALTERANDO A COR DA FONTE DO TERMINAL
+-------------------------------------
 
+-> ATIVANDO A ALTERAÇÃO DA COR DA FONTE
+    -> $ setterm -foreground green -store

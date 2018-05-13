@@ -4,6 +4,25 @@ COMANDOS PARA O TERMINAL DO DEBIAN
 
 # Este arquivo foi construido a partir do Template encontrado no arquivo Guia_Simbolos.md
 
+
+-------------------------------------
+ ALTERANDO A COR DA FONTE DO TERMINAL
+-------------------------------------
+
+-> ATIVANDO A ALTERAÇÃO DA COR DA FONTE:
+    -> $ setterm -foreground green -store
+
+
+-----------------------------------
+INSTALAÇÃO DE PROGRAMAS PELO SHELL:
+-----------------------------------
+
+ -> ATIVANDO PERMIÇÃO DE SUPERUSER:
+     -> $ sudo comando
+
+ -> INSTALANDO UM PROGRAMA NO DEBIAN
+     -> $ apt-get install nomeprograma
+
 ----------------------
 COMANDOS DE COMPRESSÃO
 ----------------------

@@ -1,43 +1,61 @@
- ====================================================
-  BEM VINDO AO ARQUIVO DE COMANDOS DO TERMINAL UBUNTU
- ====================================================
+===============================
+COMANDOS PARA O TERMINAL UBUNTU
+===============================
 
- GUIA:
-     
-       < > : as informacoes dentro desse simbolo sao comandos de teclado
+# Este arquivo foi construido a partir do Template encontrado no arquivo Guia_Simbolos.md
+-------------------------------------
+ALTERANDO A COR DA FONTE DO TERMINAL
+-------------------------------------
 
-       -> : tudo que vier depois desse simbolo sao instrucoes para o usuario fazer(nao copie com essa seta, e so uma marcacao)
+-> ATIVANDO A ALTERAÇÃO DA COR DA FONTE
+    -> $ setterm -foreground green -store
 
-       # : tudo que vier depois desse simbolo significa uma informacao importante.
+-----------------------
+INICIANDO UM NOVO SHELL
+-----------------------
 
-       Todos os comandos aqui apresentados nao possuem todas as suas informacoes ao total, portanto se deseja saber mais sobre leia os manuais no prompt de comando em si.
-
-       CMD : e o nome simplificado do prompt de comando.
-
-       BW : nome simplificado do botao do windows do teclado.
-
-
- COMANDOS:
-
-  OBS: Os comandos nao possuem uma ordem especifica!
+ -> COMO ABRIR UMA NOVA TELA PELO TECLADO:
+     -> <CTRL> + <ALT> + <T>
 
 
- COMO ABRIR UM TERMINAL NO UBUNTU:
- -> < CTRL ALT T >
+-----------------------------------
+INSTALAÇÃO DE PROGRAMAS PELO SHELL:
+-----------------------------------
 
- COMO ATIVAR AS PERMICOES DE SUPERUSER:
- -> sudo comandodesejado
+ -> ATIVANDO PERMIÇAO DE SUPERUSER:
+     -> sudo comando
 
- COMO INSTALAR ALGUM PROGRAMA PELO TERMINAL:
- -> sudo apt-get install nomeprograma
+ -> INSTALANDO UM PROGRAMA NO UBUNTU
+     -> apt-get install nomeprograma
 
- COMO CRIAR UM DIRETORIO NOVO:
- -> mkdir nomediretorio
+----------------------------------
+COMANDOS DE CONTROLE DE DIRETORIO:
+----------------------------------
 
- COMO DELETAR UM DIRETORIO:
- -> rmdir nomediretorio
- -> rm -rf nomediretorio #Se o diretorio não for vazio
+ -> PARA MUDAR DE DIRETORIO:
+     -> $ cd nomediretorio
 
+ -> PARA MOSTRAR OS ARQUIVOS E DIRETORIOS DO DIRETORIO ATUAL:
+     -> $ ls
+
+ -> PARA MOSTRAR TODOS OS ARQUIVOS COM EXTENSÃO ESPECIFICA:
+     -> $ ls *.extensao
+
+ -> PARA MOSTRAR TODOS OS ARQUIVOS, INCLUINDO OS OCULTOS:
+     -> $ la
+
+ -> PARA CRIAR UM DIRETORIO NOVO:
+    -> $ mkdir nomediretorio
+
+ -> PARA DELETAR UM DIRETORIO VAZIO:
+    -> $ rmdir nomediretorio
+
+ -> PARA DELETAR UM DIRETORIO COM INFORMAÇÕES:
+    -> $ rm -rf nomediretorio
+        -> ATENCAO: É DELETADO TUDO DE DENTRO
+
+ -> 
+ 
  COMO LIMPAR A TELA DO TERMINAL:
  -> clear
 

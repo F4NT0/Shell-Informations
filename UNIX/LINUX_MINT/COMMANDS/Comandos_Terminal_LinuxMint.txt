@@ -3,6 +3,22 @@ COMANDOS PARA TERMINAL NO LINUX MINT
 ====================================
 
 # Este arquivo foi construido a partir do Template encontrado no arquivo Guia_Simbolos.md
+------------------------------------
+ALTERANDO A COR DA FONTE DO TERMINAL
+------------------------------------
+-> ATIVANDO A ALTERAÇÃO DA COR DA FONTE:
+     -> $ setterm -foreground green -store
+
+
+-----------------------------------
+INSTALAÇAO DE PROGRAMAS PELO SHELL:
+-----------------------------------
+
+ -> ATIVANDO PERMIÇÃO DE SUPERUSER:
+     -> $ sudo comando
+
+ ->INSTALANDO UM PROGRAMA NO LINUX MINT 
+     -> $ apt-get install nomeprograma
   
 ------------------------
  INFORMACOES DO SISTEMA:
