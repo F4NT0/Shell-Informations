@@ -1,0 +1,55 @@
+      ==========================================
+       Manual de Instalação e Utilização do Tmux
+      ==========================================
+
+
+ 	 Tmux é um Multiplexador de terminais, ele disponibiliza que se possa trabalhar em várias telas de Terminais ao 
+ mesmo tempo, assim se pode fazer multiplos trabalhos ou testes ao mesmo tempo e continue trabalhando no fundo mesmo
+ que não fique olhando o terminal ou o sistema em si e pode ser apresentado de volta sem muita dificuldade.
+
+   COMO INSTALAR O TMUX NO LINUX/DEBIAN/UBUNTU:
+
+   Copie e Cole o seguinte comando:
+
+     -> sudo apt-get install tmux 
+
+   
+   COMO UTILIZAR O TMUX E CRIAR OUTRAS TELAS:
+
+     COMO ATIVAR OS COMANDOS:
+       * Clicando em < CTRL + B >, se libera as opções de comandos para se utilizar no sistema
+
+    COMO ABRIR UMA TELA NA VERTICAL:
+       < CTRL + B > e depois < SHIFT + 5 >  sendo esse ultimo queremos o botão %
+
+    COMO ABRIR UMA TELA NA HORIZONTAL:
+       < CTRL + B > e depois < SHIFT + ' > sendo esse ultimo queremos o botão "
+
+    COMO ANDAR ENTRE AS TELAS:
+       
+       PARA A DIREITA:  < CTRL + B > e depois < SETA PARA A DIREITA >
+       PARA A ESQUERDA: < CTRL + B > e depois < SETA PARA A ESQUERDA > 
+       PARA CIMA: < CTRL + B > e depois < SETA PARA CIMA >  
+       PARA BAIXO: < CTRL + B > e depois < SETA PARA BAIXO > 
+
+    COMO SELECIONAR QUAL TELA ENTRAR:
+       Existe uma forma de selecionar uma tela pelo numero dela, 
+     da seguinte forma:
+
+        < CTRL + B > e depois selecione < Q > e ira aparecer numeros na tela, sabendo 
+   qual tela deseja, só clicar no numero desejado.
+   
+    COMO SAIR E VOLTAR DEPOIS PARA O TMUX:
+         
+         Para sair do Tmux e voltar depois: <CTRL + B > e depois < D >
+ 
+         Para voltar e continuar o projeto onde parou: -> tmux attach
+
+         Se deseja sair e acabar o que estava fazendo: -> exit #fecha telas dentro tambem
+
+  COMO ABRIR UMA NOVA JANELA NO TMUX:
+      <CTRL + B> e depois selecione <C>
+
+ COMO VER QUANTAS JANELAS ESTAO ABERTAS:
+      <CTRL + B> e depois selecione <F> e clique em <ENTER>
+ 

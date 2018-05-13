@@ -1,0 +1,49 @@
+ ======================
+ MANUAL DO PROGRAMA VIM
+ ======================
+
+  VIM e um programa de edicao de texto para terminal, onde
+se consegue escrever programas e textos comuns,somente usando
+a extensao desejada e pronto!
+
+----------------------------
+ COMO TRABALHAR NO VI E VIM 
+----------------------------
+ 1) Depois de entrado no arquivo, para escrever deve clicar no botão <I> do seu teclado,iniciando assim a opção de INSERÇÃO no arquivo
+ 2) Depois de escrever o que deseja, para sair do arquivo se deve fazer o seguinte:
+     2.1) Depois de escrever, clique em <ESC> para sair do modo de Inserção
+     2.2) Clique no botão <:> e escreva <wq> para salvar
+          # <w> serve para escrever o arquivo (write)
+          # <q> serve para sair do editor (quit)
+          # Os dois juntos servem para salvar o arquivo e fechar o editor
+
+
+--------------------------------         
+COMANDOS UTEIS PARA O VI ou VIM:
+--------------------------------
+
+OBS: ESTES COMANDOS DEVEM SER FEITOS FORA DO MODO DE INSERÇAO
+
+-> DELETAR UMA LINHA INTEIRA: CLIQUE DUAS VEZES EM <D>
+-> DESFAZER UMA MODIFICAÇÃO: CLIQUE NO BOTÃO <U>
+
+-> COPIAR UM TEXTO: 
+       -> CLIQUE EM <V> PARA SELECIONAR O TEXTO (MINUSCULO: LETRA POR LETRA)
+                                                (MAIUSCULO: LINHA POR LINHA)
+       -> MOVA ATÉ ONDE SE DESEJA SELECIONAR
+       -> CLIQUE EM <Y> MINUSCULO PARA COPIAR TODO O TEXTO SELECIONADO
+
+-> DELETAR UM TEXTO:
+       -> CLIQUE EM <V> PARA SELECIONAR O TEXTO (MINUSCULO: LETRA POR LETRA)
+                                                (MAIUSCULO: LINHA POR LINHA)
+       -> MOVA ATÉ ONDE SE DESEJA DELETAR
+       -> CLIQUE EM <D> MINUSCULO PARA DELETAR TODO O TEXTO SELECIONADO
+
+-> COLAR UM TEXTO:
+       -> CLIQUE EM <V> PARA SELECIONAR O TEXTO (MINUSCULO: LETRA POR LETRA)
+                                                (MAIUSCULO: LINHA POR LINHA)
+       -> MOVA ATÉ ONDE SE DESEJA COLAR
+       -> CLIQUE EM <P> PARA COLAR O TEXTO (MINUSCULO: DEPOIS DO CURSOR)
+                                           (MAIUSCULO: ANTES  DO CURSOR) 
+          
+          

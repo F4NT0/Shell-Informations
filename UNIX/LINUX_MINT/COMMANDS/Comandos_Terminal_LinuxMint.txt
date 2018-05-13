@@ -68,6 +68,26 @@ COMANDOS PARA TERMINAL NO LINUX MINT
          -> more nomearquivo
              -> #uma pagina por vez, use espaco
 
+
+------------------------------------
+COMANDOS DE MOVIENTAÇÃO DE ARQUIVOS
+------------------------------------
+
+-> MOVIMENTANDO UM ARQUIVO DE UM DIRETORIO A OUTRO:
+    -> $ mv ~/caminho/do/arquivo/arquivo.extensao ~/caminho/para/dir/desejada
+         -> # use o comando pwd para ver o caminho completo
+
+-> COPIANDO UM ARQUIVO PARA UM NOVO DIRETORIO:
+    -> $ cp nomearquivo /caminho/para/dir/desejada
+         -> # use o comando pwd para ver o caminho completo 
+
+-> COPIANDO UM ARQUIVO PARA VÁRIOS DIRETORIOS:
+    -> $ tee ~/caminho1/  ~/caminho2/ <  ~/caminhoOriginal/arquivo.extensao
+        -> caminho* tem que ser todo o caminho que deseja
+        -> o simbolo "<" vai enviar o arquivo para os diretorios  
+
+
+
 ----------------------- 
 COMANDOS DE COMPRESSAO:
 -----------------------

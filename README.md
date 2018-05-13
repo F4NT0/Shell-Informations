@@ -107,30 +107,8 @@
 
       ATALHOS:
 
-      * Atalhos de Teclado para Diversos programas
-      * Atalhos pelos Shells
+       TODOS OS ATALHOS SE ENCONTRAM NA PASTA ATALHOS
 
-      MANUAIS:
-
-      * Manual de instalacoes de Programas para auxilio nos Shells
-      * Manual de instalacoes de Programas para Desenvolvimento
       
 
-  Como sera Organizado este repositorio:
- 
-      * WINDOWS:
-          -> Comandos - Commands
-          -> Atalhos - Shortcuts
-          -> Manuais - Manuals
-
-      * MACOSX:
-         -> Comandos - Commands
-         -> Atalhos - Shortcuts
-         -> Manuais - Manuals
-          
-      * UNIX:
-          -> Comandos - Commands
-          -> Atalhos - Shortcuts
-          -> Manuais - Manuals
-
-    
+      
