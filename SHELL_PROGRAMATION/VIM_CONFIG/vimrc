@@ -2,7 +2,7 @@
 # PARA ABRIR ELE EM SEU LINUX: sudo nano ~/.vimrc
 
 # COPIE AS INFORMAÇÕES ABAIXO NO SEU ARQUIVO DO COMPUTADOR
-
+# não copie esses comentários, eles não funcionam no código
 # TIPO DE ARQUIVO ATIVADO
 filetype on
 # SINTAXE DE PROGRAMAÇÃO ATIVADO
