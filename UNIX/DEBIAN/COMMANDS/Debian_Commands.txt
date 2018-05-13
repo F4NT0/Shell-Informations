@@ -1,68 +1,139 @@
-﻿   ==================================
-   COMANDOS PARA O TERMINAL DO DEBIAN
-   ==================================
+﻿==================================
+COMANDOS PARA O TERMINAL DO DEBIAN
+==================================
 
-  
+# Este arquivo foi construido a partir do Template encontrado no arquivo Guia_Simbolos.md
 
+----------------------
+COMANDOS DE COMPRESSÃO
+----------------------
 
+ -> COMO DESCOMPACTAR UM ARQUIVO .DEB:
+      -> $ dpkg -i caminho/ate/o/arquivo
 
-   COMANDOS:
+ -> COMO CRIAR UM ARQUIVO .TAR:
+      -> $ tar cf nomedotar.tar arquivoparapornotar
 
-     COMO DESCOMPACTAR UM ARQUIVO .DEB:
-      -> dpkg -i caminho/ate/o/arquivo
+ -> COMO EXTRAIR UM ARQUIVO .TAR:
+      -> $ tar xf nomearquivo.tar
+           
+ -> COMO EXTRAIR UM ARQUIVO .TAR.GZ:
+      -> $ tar xzf nomearquivo.tar.gz
 
-     COMO SE CONECTAR COM A PENDRIVE PELO TERMINAL:
-      #quando conectado em sua conta no LAPRO:
-         * volte até antes do /home com "cd .."
-         * procure uma pasta chamada "media"
-         * utilize o comando "cd nomepasta" e siga os proximos passos
-         * conecte nela e procure seu numero de matricula
-         * encontre o nome de seu pendrive
-         * entre no seu pendrive
+ -> COMO CRIAR UM ARQUIVO .GZ:
+      -> $ gzip nomearquivo
 
-      COMO ABRIR UMA NOVA TELA NO GNOME-TERMINAL DO DEBIAN:
-       -> gnome-terminal --working-directory=caminho/para/dir
+ -> COMO EXTRAIR ARQUIVO .GZ:
+      -> $ gzip -d nomearquivo.gz
+
+--------------------------
+ INICIANDO UM NOVO SHELL
+--------------------------
+
+ -> COMO ABRIR UMA NOVA TELA NO GNOME-TERMINAL DO DEBIAN:
+      -> $ gnome-terminal --working-directory=caminho/para/dir
         #Caminho para Dir é o caminho para a pasta desejada
 
-      COMO ABRIR UMA TELA DE INTERFACE GRAFICA PELO TERMINAL:
-       -> xdg-open nomedir
-        #nomedir é o nome do diretorio que deseja abrir gráficamente
-        #Exemplo: xdg-open Downloads
+ -> COMO ABRIR UMA NOVA TELA PELO TECLADO:
+      -> <CTRL> + <ALT> + <T>      
 
-      COMO ABRIR UMA PÁGINA NA INTERNET PELO TERMINAL:
-       -> xdg-open caminhoparasite
-        #caminhoparasite é o caminho completo para o website
-        # exemplo: https://github.com
+----------------------------
+COMANDOS DE CONEXAO NETWORK:
+----------------------------
 
-      COMANDOS DE CONTROLE DE DIRETORIO:
-         -> cd nomepasta #troca de diretorio
-         -> ls # mostra todos os diretorios dentro do diretorio
-         -> mkdir nomepasta #cria uma nova pasta
-         -> rmdir nomepasta #deleta uma pasta
-         -> rm -rf nomepasta #deleta tudo o que tiver na pasta junto
+ -> COMO ABRIR UMA TELA DE INTERFACE GRAFICA PELO TERMINAL:
+       -> $ xdg-open nomedir
+           -> #nomedir é o nome do diretorio que deseja abrir gráficamente
+           -> #Exemplo: xdg-open Downloads
 
-         PARA COPIAR UM ARQUIVO PARA UM NOVO DIRETORIO:
-         -> cp nomearquivo /home/nomepasta 
-         #tem que saber direitinho qual o caminho ate a pasta
+ -> COMO ABRIR UMA PÁGINA NA INTERNET PELO TERMINAL:
+       -> $ xdg-open caminhoparasite
+           -> #caminhoparasite é o caminho completo para o website
 
-         PARA VER UM ARQUIVO NO TERMINAL:
-         -> cat nomearquivo
-         -> more nomearquivo #uma pagina por vez, use espaco
+----------------------------------
+COMANDOS DE CONTROLE DE DIRETORIO:
+----------------------------------
+ -> PARA MUDAR DE DIRETORIO:
+       -> $ cd nomediretorio
 
-         COMANDOS DE COMPRESSAO:
+ -> PARA MOSTRAR OS ARQUIVOS E DIRETORIOS DO DIRETORIO ATUAL:
+       -> $ ls
 
-           CRIAR ARQUIVO .TAR: 
-           -> tar cf nomedotar.tar arquivoparapornotar
-           
-	   EXTRAIR ARQUIVO .TAR: 
-           -> tar xf nomearquivo.tar
+ -> PARA MOSTRAR TODOS OS ARQUIVOS COM EXTENSAO ESPECIFICA:
+       -> $ ls *.extensao
 
-           EXTRAIR ARQUIVO .TAR.GZ:
-           -> tar xzf nomearquivo.tar.gz
+ -> PARA MOSTRAR TODOS OS ARQUIVOS, INCLUINDO OS OCULTOS:
+       -> $ la
 
-           CRIAR ARQUIVO .GZ:
-           -> gzip nomearquivo #ele se torna um .gz
+ -> PARA CRIAR UM DIRETORIO NOVO:
+       -> $ mkdir nomediretorio
 
-           EXTRAIR ARQUIVO .GZ:
-           -> gzip -d nomearquivo.gz
+ -> PARA DELETAR UM DIRETORIO VAZIO:
+       -> $ rmdir nomediretorio
 
+ -> PARA DELETAR UM DIRETORIO COM INFORMAÇÕES:
+       -> $ rm -rf nomediretorio
+            -> # ATENCAO: É DELETADO TUDO DE DENTRO
+
+ -> PARA COPIAR UM ARQUIVO PARA UM NOVO DIRETORIO:
+       -> $ cp nomearquivo /caminho/dir/novo
+            -> # tem que saber o EXATO caminho
+ 
+ -> PARA LER UM ARQUIVO NO TERMINAL:
+       -> $ cat nomearquivo
+       -> $ more nomearquivo 
+            -> #uma pagina por vez, use espaco
+
+-----------------------------------
+COMANDO DE MOVIMENTAÇÃO DE ARQUIVOS
+-----------------------------------
+
+ -> MOVIMENTANDO UM ARQUIVO DE UM DIRETORIO A OUTRO:
+     -> $ mv ~/caminho/do/arquivo/arquivo.extensao ~/caminho/para/dir/desejada
+           -> # use o comando pwd para ver o caminho completo
+
+ -> COPIANDO UM ARQUIVO PARA UM NOVO DIRETORIO:
+     -> $ cp nomearquivo /caminho/para/dir/desejada
+          -> # use o comando pwd para ver o caminho completo
+
+ -> COPIANDO UM ARQUIVO PARA VÁRIOS DIRETORIOS:
+     -> $ tee ~/caminho1/nomearquivo.extensao
+              ~/caminho2/nomearquivo.extensao
+              < ~/caminhoOriginal/arquivo.extensao
+          -> # caminho* tem que ser todo o caminho que deseja
+          -> # o simbolo "<" vai enviar o arquivo para os diretorios
+          -> # o comando deve ser todo feito em uma linha
+
+-----------------------
+INFORMAÇÕES DO SISTEMA
+-----------------------
+
+ -> VERIFICAR DATA E TEMPO ATUAL:
+    -> $ date
+
+ -> PARA SABER QUEM ESTA ONLINE NO SISTEMA:
+    -> $ w
+
+ -> PARA SABER DE QUEM É O COMPUTADOR:
+    -> $ whoami
+
+ -> PARA SABER A INFORMAÇÃO DO KERNEL:
+    -> $ uname -a
+
+ -> PARA SABER A INFORMAÇÃO DO CPU E MEMORIA:
+    -> $ cat/proc/cpuinfo
+        -> # apresenta informação do CPU
+    -> $ cat/proc/meminfo
+        -> # apresenta informação da Memoria
+
+ -> PARA SABER O QUANTO JA FOI USADO DO DISCO:
+    -> $ df -h
+
+ -> PARA LER O MANUAL DE UM COMANDO OU PROGRAMA:
+    -> $ man nomedocomando
+    -> $ man nomedoprograma
+
+ -> PARA NAVEGAR PELO TERMINAL, PARA LER TODAS AS INFORMAÇOES: 
+    -> <SHIFT> + <PAGEUP>/<PAGEDOWN>
+        -> # suas siglas de teclado são: PAGEUP = PgUp , PAGEDOWN = PgDn
+ 

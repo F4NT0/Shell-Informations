@@ -1,0 +1,27 @@
+==================================
+UTILIZANDO O PENDRIVE NO SHELL CLI
+==================================
+
+-----------------------------------------
+COMO SE CONECTAR COM A PENDRIVE VIA SHELL
+-----------------------------------------
+1) Volte os Diretórios antes da pasta /home
+    1.1) Utilize o comando $ cd .. para voltar os diretórios
+    1.2) se seu shell tiver aparecendo um "/" significa que você esta na pasta fonte
+
+2) Procure pelo diretório /media
+
+3) conecte-se com o diretório /media 
+    3.1) $ cd media
+
+4) procure pelo seu nome de User
+
+5) consecte-se com o seu User
+    5.1) $ cd User 
+    5.2) # User é seu nome de usuário
+
+6) procure o nome de sua pendrive
+
+7) conecte-se em sua pendrive como feito com o seu User
+   7.1) $ cd nomependrive
+   7.2) nomependrive é o nome do seu pendrive
