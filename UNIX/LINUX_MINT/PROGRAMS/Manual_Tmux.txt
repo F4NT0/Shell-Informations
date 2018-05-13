@@ -1,55 +1,136 @@
-      ==========================================
-       Manual de Instalação e Utilização do Tmux
-      ==========================================
+==========================================
+Manual de Instalação e Utilização do Tmux
+==========================================
+TMUX É UM MULTIPLEXADOR DE TERMINAIS CLI
+POSSO TRABALHAR EM MULTIPLAS TELAS DE SHELL AO MESMO TEMPO
+
+------------------------------------------------------
+COMO INSTALAR O TMUX NO LINUX MINT/DEBIAN/UBUNTU/ARCH:
+------------------------------------------------------
+
+-> INSTALANDO NO LINUX MINT/DEBIAN/UBUNTU:
+    -> sudo apt-get install tmux 
+
+-> INSTALANDO NO ARCH LINUX:
+    -> sudo pacman -S tmux
 
 
- 	 Tmux é um Multiplexador de terminais, ele disponibiliza que se possa trabalhar em várias telas de Terminais ao 
- mesmo tempo, assim se pode fazer multiplos trabalhos ou testes ao mesmo tempo e continue trabalhando no fundo mesmo
- que não fique olhando o terminal ou o sistema em si e pode ser apresentado de volta sem muita dificuldade.
+------------------
+INFORMAÇÃO BÁSICA:
+------------------
 
-   COMO INSTALAR O TMUX NO LINUX/DEBIAN/UBUNTU:
-
-   Copie e Cole o seguinte comando:
-
-     -> sudo apt-get install tmux 
-
+-> # TMUX utiliza as teclas <CTRL> e <B> para usar comandos
    
-   COMO UTILIZAR O TMUX E CRIAR OUTRAS TELAS:
+-> # Para iniciar o TMUX no Shell:
+     -> $ tmux
 
-     COMO ATIVAR OS COMANDOS:
-       * Clicando em < CTRL + B >, se libera as opções de comandos para se utilizar no sistema
+----------------------------------
+ABRINDO UMA TELA NOVA NA VERTICAL:
+----------------------------------
 
-    COMO ABRIR UMA TELA NA VERTICAL:
-       < CTRL + B > e depois < SHIFT + 5 >  sendo esse ultimo queremos o botão %
+-> <CTRL> + <B> + <SHIFT> + <%>
 
-    COMO ABRIR UMA TELA NA HORIZONTAL:
-       < CTRL + B > e depois < SHIFT + ' > sendo esse ultimo queremos o botão "
+-------------------------------
+ABRINDO UMA TELA NA HORIZONTAL:
+-------------------------------
 
-    COMO ANDAR ENTRE AS TELAS:
-       
-       PARA A DIREITA:  < CTRL + B > e depois < SETA PARA A DIREITA >
-       PARA A ESQUERDA: < CTRL + B > e depois < SETA PARA A ESQUERDA > 
-       PARA CIMA: < CTRL + B > e depois < SETA PARA CIMA >  
-       PARA BAIXO: < CTRL + B > e depois < SETA PARA BAIXO > 
+-> <CTRL> + <B> + <SHIFT> + <'>
 
-    COMO SELECIONAR QUAL TELA ENTRAR:
-       Existe uma forma de selecionar uma tela pelo numero dela, 
-     da seguinte forma:
+---------------------------
+COMO ANDAR ENTRE AS TELAS:
+---------------------------
 
-        < CTRL + B > e depois selecione < Q > e ira aparecer numeros na tela, sabendo 
-   qual tela deseja, só clicar no numero desejado.
+-> PARA A DIREITA: <CTRL> + <B> + <SETA PARA A DIREITA>
+
+-> PARA A ESQUERDA: <CTRL> + <B> + <SETA PARA A ESQUERDA>
+
+-> PARA CIMA: <CTRL> + <B> + <SETA PARA CIMA>
+
+-> PARA BAIXO: <CTRL> + <B> + <SETA PARA BAIXO>
+
+-> POR ENUMERAÇÃO:
+   -> <CTRL> + <B> + <Q> + <SELECIONE O NÚMERO DA TELA>
+
+-------------------------------------
+CRIANDO UMA NOVA JANELA NO TMUX:
+-------------------------------------
+
+-> <CTRL> + <B> + <C>
+
+------------------------------
+RENOMEANDO UMA JANELA DO TMUX:
+------------------------------
+
+-> INTERNAMENTE NO TMUX:
+   -> <CTRL> + <B> + <:> + $ rename-window + novonome
+
+   -> <CTRL> + <B> + <&>
+
+-> EXTERNAMENTE DO TMUX:
+   -> $ tmux rename-window novonome
+
+-----------------------------
+COMO SAIR E RETORNAR AO TMUX:
+-----------------------------
    
-    COMO SAIR E VOLTAR DEPOIS PARA O TMUX:
-         
-         Para sair do Tmux e voltar depois: <CTRL + B > e depois < D >
- 
-         Para voltar e continuar o projeto onde parou: -> tmux attach
+-> SAIR DO TMUX SEM ENCERRAR OS PROCESSOS:
+   -> <CTRL> + <B> + <D>
 
-         Se deseja sair e acabar o que estava fazendo: -> exit #fecha telas dentro tambem
+-> VOLTAR A SESSÃO DO TMUX:
+   -> $ tmux attach
 
-  COMO ABRIR UMA NOVA JANELA NO TMUX:
-      <CTRL + B> e depois selecione <C>
+------------------
+ENCERRANDO O TMUX:
+------------------
 
- COMO VER QUANTAS JANELAS ESTAO ABERTAS:
-      <CTRL + B> e depois selecione <F> e clique em <ENTER>
- 
+-> $ exit #em todas as telas
+
+-> <CTRL> + <B> + <X> #em todas as telas
+
+------------------------------
+ALTERANDO ENTRE JANELAS DO TMUX:
+------------------------------
+
+-> <CTRL> + <B> + <F> 
+   
+-> clique <ENTER>
+   
+-> selecione qual tela deseja ir
+
+--------------------------------------
+TORNAR UMA TELA DO TMUX EM UMA JANELA
+--------------------------------------
+
+-> <CTRL> + <B> + <!>
+
+---------------------------
+ENTRANDO NO MODO DE COMANDO
+---------------------------
+
+-> <CTRL> + <B> + <:>
+
+----------------------------------------------------
+UTILIZANDO OS COMANDOS DO VI PARA INTERAÇÃO NO TMUX
+----------------------------------------------------
+
+-> INICIANDO O SISTEMA VI NO TMUX:
+      -> <CTRL> + <B> + <:> + $ setw -g mode-keys vi
+
+-> COMANDOS DE SCROOL NO TMUX USANDO VI:
+      -> <SETA PARA CIMA> #scrool para cima
+      -> <SETA PARA BAIXO> #scrool para baixo
+
+-> COMANDOS DE MOVIMENTOO DO CURSOR:
+      -> <H> #move o cursor para a esquerda
+      -> <J> #move o cursor para a direita
+      -> <K> #move o cursor para cima
+      -> <L> #move o cursor para baixo
+      -> <W> #move o cursor para frente umma letra por vez 
+      -> <B> #move o cursor para trás uma letra por vez
+
+-> PESQUISAR UMA PALAVRA:
+     -> </> + $ palavradesejada #pesquisa a palavra para frente
+     -> <?> + $ palavradesejada #pesquisa a palavra para trás
+     -> <n> #proxima ocorrencia da palavra
+     -> <N> #ocorrencia anterior da palavra
+      
