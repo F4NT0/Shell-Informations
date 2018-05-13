@@ -1,0 +1,30 @@
+======================================
+ PROGRAMAS IMPORTANTES PARA ARCH LINUX
+======================================
+
+---------------
+NETWORK MANAGER
+---------------
+
+----
+UFW
+----
+
+Uncomplicated FireWall é um firewall leve para arch linux
+
+-> COMO INSTALAR:
+    -> $ sudo pacman -S ufw
+
+-> INICIANDO O UFW:
+    -> $ sudo ufw enable
+
+-> CONFIGURANDO PARA SEMPRE ESTAR ATIVO:
+    -> $ sudo systemctl start ufw.service
+    -> $ sudo systemctl enable ufw.service
+
+-> VERFICANDO OS STATUS DO UFW:
+    -> $ ufw status
+
+------
+YAOURT
+------
