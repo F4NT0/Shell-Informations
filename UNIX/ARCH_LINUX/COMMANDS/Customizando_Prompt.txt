@@ -1,0 +1,98 @@
+=============================
+CUSTOMIZANDO O PROMPT DO BASH
+=============================
+Podemos customizar a mensagem do prompt de comando como quisermos
+Para isso devemos usar os seguintes comandos abaixo:
+
+-------------------------------
+VERIFICANDO O FORMATO DO PROMPT
+-------------------------------
+
+-> COMANDO PARA VERIFICAR A SAIDA DO PROMPT
+   -> $ echo $PS1
+        -> # PS1 é o prompt natural do sistema
+        -> # tipo de saida: \u@\h \W \$
+
+------------------------------
+CÓDIGOS PARA COLOCAR NO PROMPT
+------------------------------
+Existem códigos que podemos usar para tornar o Shell mais eficiente
+
+-> \d : apresenta a data (Weekday Month Date)
+-> \h : apresenta o nome do dono do sistema(hostname)
+-> \t : o horário atual em formato de 24h (HH:MM:SS)
+-> \u : apresenta o nome do Usuário atual
+-> \w : apresenta o diretório atual(pasta home abreviada com ~)
+-> \[ e \] : o inicio e o fim de uma área de não impressão
+
+
+--------------------------------
+MODIFICANDO O FORMATO DO PROMPT 
+--------------------------------
+É muito simples alterar o prompt
+
+-> $ PS1="comandosdesejados"
+
+-> exemplo: PS1="[\u@\h \W]\$ "
+
+-----------------------------
+ALTERANDO AS CORES DO PROMPT
+------------------------------
+Iremos utilizar a paleta de cores do setaf
+Se deseja mais informações,procure a paleta no google
+
+-> CORES PRINCIPAIS:
+   -> 0 : preto
+   -> 1 : vermelho
+   -> 2 : verde
+   -> 3 : laranja
+   -> 4 : azul
+   -> 5 : magenta
+   -> 6 : ciano
+   -> 7 : branco
+   -> 11: amarelo
+   -> 12: roxo
+   -> 208: rosa
+
+-> COMO ATIVAR AS CORES:
+   -> $ tput setaf numerocor
+   -> ex: tput setaf 1
+
+-> ALTERANDO AS CORES DO PROMPT:
+   -> #Entramos no arquivo .bashrc 
+   -> sudo nano ~/.bashrc
+   
+   -> #criamos as confiigurações de cores
+   -> COR="\[$(comandodacor)\]"
+   -> ex: RED="\[$(tput setaf 1)\]"
+
+   -> #criamos a configuração de reset
+   -> RESET="\[$(tput sgr0)\]"
+
+   -> #adicionamos as cores no prompt PS1
+   -> PS1='[${RED}\u${RESET}@${GREEN}\h${RESET} ${BLUE}\W${RESET}]'
+
+   
+
+----------------------------------------
+CONFIGURANDO O GIT PARA APARECER NO BASH
+----------------------------------------
+Podemos colocar no prompt do bash o git
+
+1) Tenha o Git instalado no sistema
+
+2) entre no arquivo git-prompt
+   -> $ sudo nano /usr/share/git/completion/git-prompt.sh
+
+3) também vá até o arquivo .bashrc
+   -> $ sudo nano ~/.bashrc
+
+4) coloque no final do arquivo .bashrc:
+   -> $ source ~/.git-prompt.sh
+
+5) salve e feche o .bashrc
+
+6) para adicionar o git no bash, coloque esse comando no PS1
+   -> $(__git_ps1 " (%s)") #o $ também vai
+
+
