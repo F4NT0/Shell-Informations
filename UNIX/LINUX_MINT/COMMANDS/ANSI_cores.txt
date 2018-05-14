@@ -1,0 +1,68 @@
+===============================
+UTILIZANDO CORES DO CÓDIGO ANSI
+===============================
+
+---------------------------
+COMANDO PARA SAIR AS CORES
+---------------------------
+
+-> ADICIONANDO CORES EM UM ARQUIVO:
+    -> CRIANDO UMA VARIAVEL COM A COR:
+          -> <nome da cor>='\e[<cor de fundo> ; <cor da letra>m'
+               -> ex: RED='\e[40;31m'
+
+    -> PARANDO A SAIDA DA COR:
+          -> # Crie a variavel abaixo:
+               -> STOP='\e[0m'
+
+     -> SAIDA DO TEXTO 
+    -> printf "${RED}Texto${STOP}"
+
+-> ADICIONANDO CORES NA SAIDA DE SHELL
+    -> echo -e "\e[<cor de fundo>;<cor da letra>m<texto desejado>"
+         -> ex: echo -e "\e[40;31mVERMELHO"
+
+-------------------
+ CÓDIGOS DE CORES
+-------------------
+
+-> FOREGROUND(LETRAS)
+     
+     31 : VERMELHO FORTE
+     32 : VERDE FORTE
+     33 : AMARELO FORTE
+     34 : AZUL FORTE
+     35 : MAGENTA FORTE
+     36 : CIANO FORTE
+
+     91 : VERMELHO FRACO
+     92 : VERDE FRACO
+     93 : AMARELO FRACO
+     94 : AZUL FRACO
+     95 : MAGENTA FRACO
+     96 : CIANO FRACO
+     97 : BRANCO
+
+
+ -> BACKGROUND(COR DE FUNDO)
+    
+     40 : PRETO
+     41 : VERMELHO
+     42 : VERDE
+     43 : AMARELO
+     44 : AZUL
+     45 : MAGENTA
+     46 : CIANO
+      
+     101 : VERMELHO FRACO
+     102 : VERDE FRACO
+     103 : AMARELO FRACO
+     104 : AZUL FRACO
+     105 : MAGENTA FRACO
+     106 : CIANO FRACO
+     107 : BRANCO 
+     
+
+     
+
+

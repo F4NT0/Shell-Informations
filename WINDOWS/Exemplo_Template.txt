@@ -1,0 +1,21 @@
+=======================================
+EXEMPLO DE TEMPLATE DE ARQUIVOS EM .TXT
+=======================================
+Este Template foi criado por F4NT0
+
+================
+TÍTULO PRINCIPAL
+================
+----------
+SUBTITULO
+----------
+Informação crua
+
+1) informação por passos
+
+-> TÍTULO DAS INFORMAÇÕES DE COMANDOS OU TECLAS
+     -> # Comentário 
+     -> $ Comandos de Shell
+     -> <TECLA DO TECLADO MAIUSCULA> <tecla do teclado minuscula>
+
+
