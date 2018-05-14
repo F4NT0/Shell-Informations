@@ -4,6 +4,7 @@ listando todas as redes disponiveis:
   -> nmcli d wifi list
 conectando em uma rede wifi pelo network 
   -> nmcli dev wifi con "nomerede" password "senharede"
+          -> ex: nmcli dev wifi "nomerede" password "aivnez107"
 
 Desligando o wifi do NetWorkManager:
   nmcli radio wifi off
