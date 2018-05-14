@@ -1,22 +1,62 @@
- ======================
- MANUAL DO PROGRAMA VIM
- ======================
+ ============================
+ MANUAL DO PROGRAMA VI E VIM
+ ============================
 
   VIM e um programa de edicao de texto para terminal, onde
 se consegue escrever programas e textos comuns,somente usando
 a extensao desejada e pronto!
 
+---------------
+INICIANDO O VIM
+---------------
+
+-> COM NOME E EXTENSÃO ESPECIFICOS:
+   -> $ vim nomearquivo.extensao
+
+-> VAZIO:
+   -> $ vim
+
+
+---------------------------------
+ TRABALHANDO COM ARQUIVOS NO VIM
+---------------------------------
+ATENÇÃO: NÃO PODE ESTAR EM MODO DE INSERÇÃO
+
+-> ABRINDO UM ARQUIVO:
+    -> <:> + <o> + $ nomedoarquivo
+        -> ex:   ":o nomedoarquivo"
+
+-> SALVANDO UM ARQUIVO COMO:
+    -> <:> + $ saveas nomearquivo
+       -> ex: ":saveas nomearquivo"
+
+-> FECHANDO UM ARQUIVO:
+   -> <:> + $ close
+
+-> PESQUISANDO UMA PALAVRA:
+   -> <:> + </> + $ palavradesejada
+
+
+
+
+
 ----------------------------
  COMO TRABALHAR NO VI E VIM 
 ----------------------------
- 1) Depois de entrado no arquivo, para escrever deve clicar no botão <I> do seu teclado,iniciando assim a opção de INSERÇÃO no arquivo
- 2) Depois de escrever o que deseja, para sair do arquivo se deve fazer o seguinte:
-     2.1) Depois de escrever, clique em <ESC> para sair do modo de Inserção
-     2.2) Clique no botão <:> e escreva <wq> para salvar
-          # <w> serve para escrever o arquivo (write)
-          # <q> serve para sair do editor (quit)
-          # Os dois juntos servem para salvar o arquivo e fechar o editor
+-> PARA INICIAR A INSERÇÃO DE TEXTO:
+      -> <I>
 
+-> PARA SAIR DA INSERÇÃO DE TEXTO:
+      -> <ESC>
+
+-> PARA SALVAR O TEXTO:
+      -> <ESC> + <:> + <w>
+
+-> PARA SAIR DO VI E VIM:
+      -> <ESC> + <:> + <q>
+
+-> PARA SALVAR E SAIR:
+      -> <ESC> + <:> + <wq>
 
 --------------------------------         
 COMANDOS UTEIS PARA O VI ou VIM:
@@ -24,26 +64,29 @@ COMANDOS UTEIS PARA O VI ou VIM:
 
 OBS: ESTES COMANDOS DEVEM SER FEITOS FORA DO MODO DE INSERÇAO
 
--> DELETAR UMA LINHA INTEIRA: CLIQUE DUAS VEZES EM <D>
--> DESFAZER UMA MODIFICAÇÃO: CLIQUE NO BOTÃO <U>
+-> DELETAR UMA LINHA INTEIRA: 
+     -> <D> + <D>
+
+-> DESFAZER UMA MODIFICAÇÃO:
+     -> <U>
 
 -> COPIAR UM TEXTO: 
-       -> CLIQUE EM <V> PARA SELECIONAR O TEXTO (MINUSCULO: LETRA POR LETRA)
-                                                (MAIUSCULO: LINHA POR LINHA)
+       -> <v> #LETRA POR LETRA
+       -> <V> #LINHA POR LINHA         
        -> MOVA ATÉ ONDE SE DESEJA SELECIONAR
-       -> CLIQUE EM <Y> MINUSCULO PARA COPIAR TODO O TEXTO SELECIONADO
+       -> CLIQUE EM <y> PARA COPIAR
 
 -> DELETAR UM TEXTO:
-       -> CLIQUE EM <V> PARA SELECIONAR O TEXTO (MINUSCULO: LETRA POR LETRA)
-                                                (MAIUSCULO: LINHA POR LINHA)
+       -> <v> #LETRA POR LETRA
+       -> <V> #LINHA POR LINHA  
        -> MOVA ATÉ ONDE SE DESEJA DELETAR
-       -> CLIQUE EM <D> MINUSCULO PARA DELETAR TODO O TEXTO SELECIONADO
+       -> CLIQUE EM <d> PARA DELETAR TODO O TEXTO SELECIONADO
 
 -> COLAR UM TEXTO:
-       -> CLIQUE EM <V> PARA SELECIONAR O TEXTO (MINUSCULO: LETRA POR LETRA)
-                                                (MAIUSCULO: LINHA POR LINHA)
+       -> <v> #LETRA POR LETRA
+       -> <V> #LINHA POR LINHA  
        -> MOVA ATÉ ONDE SE DESEJA COLAR
-       -> CLIQUE EM <P> PARA COLAR O TEXTO (MINUSCULO: DEPOIS DO CURSOR)
-                                           (MAIUSCULO: ANTES  DO CURSOR) 
+       -> <p> #DEPOIS DO CURSOR
+       -> <P> #ANTES  DO CURSOR
           
           

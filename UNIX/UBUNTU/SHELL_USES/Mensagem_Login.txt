@@ -1,0 +1,69 @@
+=====================================================
+DEIXANDO UMA MENSAGEM EM ASCII NA TELA DE LOGIN SHELL
+=====================================================
+Neste tutorial irei mostrar como deixar conectado 
+uma mensagem no Shell CLI quando fizer login no sistema
+
+---------
+PROGRAMAS
+---------
+
+-> FIGLET: programa simples de letras em ASCII
+
+-> TOILET: letras em ASCII que pode colorir
+
+-------
+FIGLET
+-------
+
+-> Baixando o Figlet
+     -> ARCH: $ sudo pacman -S figlet
+     -> MINT/UBUNTU/DEBIAN: $ apt-get install figlet
+
+-> Testando o Figlet
+    -> VER FONTES: $ showfigfonts
+     -> TESTAR:$ figlet teste
+
+----------------------------
+CRIANDO MENSAGEM PARA SHELL
+----------------------------
+
+1) Se conecte com o arquivo bash.bashrc
+    -> $ sudo nano /etc/bash.bashrc
+
+2) Desça até o fim do Código
+
+3) Escreva no fim clear e deixe uma linha em branco  
+
+4) Código para escrever no arquivo:
+     
+     -> figlet -f nomeFonte "texto" #necessário ter as aspas
+
+5) Salve com CTRL+O
+
+6) Saia do arquivo com CTRL+X
+
+-----------------
+EXEMPLO DE TEXTO:
+-----------------
+
+#Saida de imagem do logo do Sistema Operacional
+#Tenha baixado o programa screenfetch
+screenfetch
+
+#Saida de informações da Bateria
+#Tenha baixado o programa acpi
+acpi -V
+
+# MENSAGEM DE LOGIN DO SISTEMA
+
+figlet -w 200 -f term "=================================="
+figlet -w 200 -f standard "FANTO ARCH LINUX"
+figlet -w 200 -f small "CLI Operational System"
+figlet -w 200 -f term "=================================="
+
+
+
+
+
+
