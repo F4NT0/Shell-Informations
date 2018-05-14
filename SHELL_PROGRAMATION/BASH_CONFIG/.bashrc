@@ -11,12 +11,14 @@
 RED="$(tput setaf 1)"
 #LARANJA
 OR="$(tput setaf 3)"
-#AMARELO
-Y="$(tput setaf 11)"
+#BRANCO
+B="$(tput setaf 7)"
 #CIANO
 C="$(tput setaf 6)"
 #ROSA
 RO="$(tput setaf 208)"
+#VERDE FRACO
+LG="$(tput setaf 2)"
 #RESETAR
 R="$(tput sgr0)"
 
@@ -24,7 +26,7 @@ alias ls='ls --color=auto'
 
 #PROMPT DO BASH PRINCIPAL
 # $(__git_ps1 " (%s)") é a chamada do GIT no bash
-PS1='[${OR}USER: \u ${Y}TIME: \t ${C}DIR: \W ${RED}$(__git_ps1 " (%s)")${R}]\n\$ '
+PS1='[${OR}USER: \u ${B}TIME: \t ${C}DIR: \W ${RED}$(__git_ps1 " (%s)")]\n[${LG}$(acpi -b)${R}]\n\$ '
 
 export VISUAL="vim"
 

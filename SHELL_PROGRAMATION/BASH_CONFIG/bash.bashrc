@@ -24,10 +24,22 @@ esac
 [ -r /usr/share/bash-completion/bash_completion   ] && . /usr/share/bash-completion/bash_completion
 
 
+# UTILIZANDO AS CORES DE ANSI
+RED="\e[31m"
+ORANGE="\e[33m"
+BLUE="\e[94m"
+GREEN="\e[92m"
+STOP="\e[0m"
+
+
 # COMO FAZER UMA MENSAGEM DE TELA DE LOGIN NO SISTEMA 
 screenfetch
-acpi -V
-figlet -w 200 -f term "=========================================================================================="
+printf "${GREEN}"
+printf "===========================================================================================\n"
+printf "${ORANGE}"
 figlet -w 200 -f standard "FANTO ARCH LINUX"
+printf "${BLUE}"
 figlet -w 200 -f  small "CLI Operational System"
-figlet -w 200 -f term "==========================================================================================="
+printf "${GREEN}"
+printf "===========================================================================================\n"
+printf "${STOP}"
