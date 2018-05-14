@@ -1,0 +1,54 @@
+-----------------------------
+CONFIGURANDO CORES DO SISTEMA
+-----------------------------
+Podemos colocar qualquer arquivo ou diretorio com cores diferentes
+Isso se chama LS_COLORS config
+
+--------
+ESTILOS
+--------
+-> 0 : cor comum
+-> 1 : negrito
+-> 4 : sublinhado
+
+
+------
+CORES
+------
+
+-> 34 : AZUL
+-> 32 : VERDE
+-> 36 : CIANO
+-> 31 : VERMELHO
+-> 35 : ROXO
+-> 1;33 : AMARELO
+
+------------------
+TIPO DE INFORMAÇÃO
+------------------
+
+-> di : DIRETORIOS
+-> ex : EXECUTÁVEIS
+-> fi : ARQUIVO NORMAL
+-> *.estenção : PARA TIPO DE EXTENSÃO DESEJADA
+
+-------------------
+DEFININDO AS CORES
+-------------------
+
+1) Abra o arquivo .bashrc
+   -> sudo nano ~/.bashrc
+
+2) Digite o seguinte para cada tipo:
+
+-> LS_COLORS=$LS_COLORS:'<TIPO>=<ESTILO>;<COR>' ; export LS_COLORS
+
+------------------
+MINHA CONFIGURAÇÃO
+------------------
+
+#DIRETORIOS:
+LS_COLORS=$LS_COLORS:'di=1;36' ; export LS_COLORS
+#ARQUIVOS COMUNS
+LS_COLORS=$LS_COLORS:'fi=1;33' ; export LS_COLORS
+
