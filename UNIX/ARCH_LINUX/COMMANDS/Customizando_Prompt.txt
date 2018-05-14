@@ -81,18 +81,54 @@ Podemos colocar no prompt do bash o git
 
 1) Tenha o Git instalado no sistema
 
-2) entre no arquivo git-prompt
-   -> $ sudo nano /usr/share/git/completion/git-prompt.sh
+2) Crie um diretorio chamado .bash
+    -> $ mkdir ~/.bash
 
-3) também vá até o arquivo .bashrc
+3) Copie o arquivo git-prompt
+
+-> $ cp /usr/share/git/completion/git-prompt.sh ~/.bash/git-prompt.sh
+
+4) vá até o arquivo .bashrc
    -> $ sudo nano ~/.bashrc
 
 4) coloque no final do arquivo .bashrc:
-   -> $ source ~/.git-prompt.sh
+   -> source ~/.bash/git-prompt.sh
 
-5) salve e feche o .bashrc
+5) Para saber as alterações no branch:
+   -> export GIT_PS1_SHOWDIRTYSTATE=1
+       -> # para ver as alterações na branch
+   -> + : significa que foi feito um commit nao feito push
+   -> * : significa que foi alterado informações na branch
 
-6) para adicionar o git no bash, coloque esse comando no PS1
-   -> $(__git_ps1 " (%s)") #o $ também vai
+
+6) Para iniciar o processo no Prompt:
+  -> $(__git_ps1 " (%s)")
+
+
+------------------------------------
+CONFIGURAÇÃO FINAL DE MEU ARCH LINUX
+-------------------------------------
+
+# CONFIGURANDO AS CORES NO PROMPT
+#VERMELHO
+RED="$(tput setaf 1)"
+#LARANJA
+OR="$(tput setaf 3)"
+#AMARELO
+Y="$(tput setaf 11)"
+#CIANO
+C="$(tput setaf 6)"
+#ROSA
+RO="$(tput setaf 208)"
+#RESETAR(USADO PARA NÃO DEIXAR SAIR AS CORES)
+R="$(tput sgr0)"
+
+#CONFIGURANDO O GIT NO BASH
+source ~/.bash/git-prompt.sh
+export GIT_SHOWDIRTYSTATE=1
+
+#PROMPT COMPLETO DO BASH
+PS1='[${OR}USER: \u ${Y}TIME: \t ${C}DIR: \W ${RED}$(__git_ps1 " (%s)")${R}]\n\$ '
+  
 
 
