@@ -1,0 +1,81 @@
+===========================
+COMO FAZER UM COMMIT NO GIT
+===========================
+
+----------------------------
+CRIANDO REPOSITÓRIO INTERNO
+----------------------------
+
+-> INICIANDO UMA PASTA COMO GIT FOLDER
+    -> $ git init
+
+-> VERIFICANDO O ESTADOS DOS ARQUIVOS NO FOLDER
+    -> $ git status
+         -> # VERDE: Está adicionado no GIT
+         -> # VERMELHO: Não está adicionado no GIT
+
+-> ADICIONANDO OS ARQUIVOS NO GIT
+    -> $ git add --all 
+         -> # Salva tudo
+    
+    -> $ git add *.extensao
+         -> # Adiciona arquivos de extensão especifica
+
+-> FAZENDO UM COMMIT NO GIT
+    -> $ git commit -m "Mensagem Desejada"
+         -> # ex: git commit -m "Creating folder"
+
+-> CONECTANDO AS INFORMAÇÕES PARA UM REPOSITÓRIO EXTERNO
+    -> $ git remote add origin <link>
+         -> # <link> é encontrado no repositório online
+
+-> ENVIANDO AS INFORMAÇÕES PARA O REPOSITÓRIO EXTERNO
+    -> $ git  push -u origin <nome da branch>
+         -> # A branch principal é master
+
+-> ATUALIZANDO AS INFORMAÇÕES DE SEU REPOSITÓRIO INTERNO
+    -> $ git pull
+
+------------------------------
+UTILIZANDO REPOSITÓRIO EXTERNO
+------------------------------
+
+-> BAIXANDO O REPOSITÓRIO DO GITHUB/GITLAB/GITBUCKET
+  -> git clone <código repositório>
+        -> # Código se encontra no próprio site
+  -> ex: git clone https://github.com/F4NT0/Shell-Informations.git
+
+
+-> VERIFICANDO O ESTADOS DOS ARQUIVOS NO FOLDER
+    -> $ git status
+         -> # VERDE: Está adicionado no GIT
+         -> # VERMELHO: Não está adicionado no GIT
+
+-> ADICIONANDO OS ARQUIVOS NO GIT
+    -> $ git add --all 
+         -> # Salva tudo
+    
+    -> $ git add *.extensao
+         -> # Adiciona arquivos de extensão especifica
+
+-> FAZENDO UM COMMIT NO GIT
+    -> $ git commit -m "Mensagem Desejada"
+         -> # ex: git commit -m "Creating folder"
+
+-> ENVIANDO AS INFORMAÇÕES PARA O REPOSITÓRIO EXTERNO
+    -> $ git push origin <nome da branch>
+         -> # A branch principal é master
+
+-> ATUALIZANDO AS INFORMAÇÕES DE SEU REPOSITÓRIO INTERNO
+    -> $ git pull
+
+
+----------------------------------------
+VERIFICANDO OS COMMITS FEITOS NO PROJETO
+----------------------------------------
+
+-> LENDO TODOS OS COMMITS E SEUS CÓDIGOS
+    -> $ git log
+
+
+

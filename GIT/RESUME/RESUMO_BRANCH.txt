@@ -1,0 +1,84 @@
+==========================================
+RESUMO DE INFORMAÇÕES SOBRE BRANCHS NO GIT
+==========================================
+Branchs são Diretórios separados do Diretório principal
+chamado Master, Se cria Branchs quando se trabalha
+com várias pessoas ao mesmo tempo, sem poluir o 
+fluxo da Master e sem estragar o código de todos
+
+-------------------
+CRIANDO UMA BRANCH
+-------------------
+
+-> BAIXE O REPOSITÓRIO DESEJADO
+   -> $ git clone <LINK>
+
+-> CRIANDO UMA BRANCH NO PROJETO
+   -> $ git checkout -b <NOME BRANCH>
+       -> # Pode escolher o nome da branch como desejar
+
+--------------------
+DELETANDO UMA BRANCH
+--------------------
+
+-> VÁ A BRANCH QUE DESEJA DELETAR
+   -> $ git checkout <NOME BRANCH>
+
+-> DELETE A BRANCH
+   -> $ git branch -d <NOME BRANCH>
+
+
+---------------------------------
+VERIFICANDO AS BRANCH DO PROJETO
+---------------------------------
+
+-> VERIFICANDO QUAL BRANCH VOCÊ SE ENCONTRA
+   -> $ git branch 
+       -> # Branch atual é a com *
+
+-> VERIFICANDO TODAS AS BRANCHS EXISTENTES
+   -> $ git branch -r
+
+
+-----------------------------------
+ALTERNANDO ENTRE BRANCHS NO PROJETO
+------------------------------------
+
+-> SE CONECTAR COM UMA JA NO SISTEMA
+    -> $ git checkout <NOME DA BRANCH>
+          -> # <NOME DA BRANCH> é a que deseja ir
+
+-> SE CONECTAR COM UMA NO REMOTO
+     -> $ git branch -r
+         -> # Verifique o nome do branch desejado
+
+     -> $ git checkout <NOME DA BRANCH>
+
+------------------------------
+ENVIANDO BRANCH PARA O REMOTO
+------------------------------
+
+-> $ git push origin <NOME DA BRANCH>
+
+-------------------------
+FAZENDO MERGE DE BRANCHS
+-------------------------
+
+-> SE CONECTANDO A BRANCH QUE DESEJA FAZER MERGE
+     -> $ git checkout <NOME DA BRANCH>
+
+-> PARA SABER O NOME DE TODAS AS BRANCHS DO SISTEMA
+     -> $ git branch
+
+-> FAZENDO MERGE NA BRANCH ATUAL
+     -> $ git merge <NOME DA BRANCH 2>
+          -> # <NOME DA BRANCH 2> é a qual deseja pegar a info
+
+-------------------------------------------
+VERIFICANDO MUDANÇAS ANTES DE FAZER O MERGE
+--------------------------------------------
+
+-> VERIFICANDO O QUE MUDA QUANDO FIZER O MERGE
+     -> $ git diff <BRANCH ORIGEM> <BRANCH DESTINO>
+
+
