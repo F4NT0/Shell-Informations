@@ -3,39 +3,14 @@ COMANDOS PARA TERMINAL NO LINUX MINT
 ====================================
 
 # Este arquivo foi construido a partir do Template encontrado no arquivo Guia_Simbolos.md
-------------------------------------
-ALTERANDO A COR DA FONTE DO SHELL
-------------------------------------
--> ATIVANDO A ALTERAÇÃO DA COR DA FONTE:
-     -> $ setterm -foreground green -store
 
----------------------------
-ALTERANDO A FONTE DO SHELL
----------------------------
--> BAIXE A FONTE DESEJADA(MEU CASO É O TERMINUS)
-     -> $ sudo pacman -S terminus-font
+-----------------------
+INICIANDO UM NOVO SHELL
+-----------------------
 
--> VÁ ATÉ O DIRETÓRIO DAS FONTES:
-     -> cd /usr/share/kbd/consolefonts
+-> COMO ABRIR UMA NOVA TELA PELO TECLADO:
+      -> <CTRL> + <ALT> + <T>
 
--> ORGANIZAÇÃO DAS FONTES:
-    -> ter-v<tamanho><tipo>.psf.gz
-          -> # v é o tipo de unicode latino
-          -> # tamanho: 12 14 20 22 24 (tamanho da fonte)
-          -> # tipo: normal(n),bold(b) 
-
-    -> meu favorito: ter-v20n.psf.gz
-
--> PARA TESTAR A FONTE NO SISTEMA:
-    -> setfont ter-v<tamanho><tipo>.psf.gz
-       -> ex: setfont ter-v20n.psf.gz
-
--> PARA MANTER PERMANENTEMENTE A FONTE NO SISTEMA:
-    -> # Se conecte no arquivo vconsole.conf
-    -> $ sudo vim /etc/vconsole.conf
-    -> # Altere a opção FONT
-    -> $ FONT=ter-v20n
-    -> # Salve o arquivo e reinicie o sistema 
 
 -----------------------------------
 INSTALAÇAO DE PROGRAMAS PELO SHELL:
@@ -44,8 +19,20 @@ INSTALAÇAO DE PROGRAMAS PELO SHELL:
  -> ATIVANDO PERMIÇÃO DE SUPERUSER:
      -> $ sudo comando
 
- ->INSTALANDO UM PROGRAMA NO LINUX MINT 
+ ->INSTALANDO UM PROGRAMA NO LINUX MINT: 
      -> $ apt-get install nomeprograma
+
+ -> DESINSTALANDO UM PROGRAMA E SEUS DIRETÓRIOS:
+     -> $ apt-get --purge remove nomeprogramma
+
+ -> DELETANDO SOMENTE O PROGRAMA,DEIXANDO SEUS DIRETÓRIOS:
+     -> $ apt-get remove nomeprograma
+
+ -> DELETANDO PACOTES DESNECESSÁRIOS:
+     -> $ apt-get autoremove
+
+ -> VENDO TODOS OS PROGRAMAS INSTALADOS: 
+     -> $ dpkg --list
   
 ------------------------
  INFORMACOES DO SISTEMA:
@@ -115,14 +102,35 @@ INICIANDO UM NOVO SHELL
                -> # ATENÇÃO: É DELETADO TUDO DE DENTRO
 
  -> PARA COPIAR UM ARQUIVO PARA UM NOVO DIRETORIO:
-         -> $ cp nomearquivo /home/nomepasta 
-              -> #tem que saber EXATAMENTE qual o caminho ate a pasta
+         -> $ cp nomearquivo /caminho/dir/novo
+             -> # /caminho/dir/novo é o caminho para o dir desejado 
+             -> #tem que saber EXATAMENTE qual o caminho ate a pasta
 
- -> PARA LER UM ARQUIVO NO TERMINAL:
+ -> COMO LIMPAR A TELA DO SHELL:
+         -> $ clear
+
+          
+------------------------------
+LEITURA E RENOMEIO DE ARQUIVOS
+------------------------------
+
+ -> PARA LER UM ARQUIVO NO SHELL:
          -> $ cat nomearquivo
          -> $more nomearquivo
              -> #uma pagina por vez, use espaco
 
+ -> PARA LER UM ARQUIVO NO PROGRAMA NANO:
+         -> $ nano nomearquivo.extensao
+
+ -> PARA LER UM ARQUIVO NO PROGRAMA VI E VIM:
+         -> $ vi nomearquivo.extensao
+         -> $ vim nomearquivo.extensao
+
+  -> PARA RENOMEAR UM ARQUIVO NO SHELL:
+         -> $ mv nomeantigo.extensao nomenovo.extensao 
+
+  -> PARA LER O MANUAL DE UM PROGRAMA:
+         -> $ man nomeprograma
 
 ------------------------------------
 COMANDOS DE MOVIMENTAÇÃO DE ARQUIVOS

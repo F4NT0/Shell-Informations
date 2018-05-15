@@ -1,0 +1,18 @@
+=================================================
+PROBLEMAS ENCONTRADOS E RESOLVIDOS NO ARCH LINUX
+=================================================
+
+
+----------------------------
+FALHA DE DOWNLOAD NO PACMAN
+----------------------------
+
+-> MENSAGEM:
+     #database file for "extra" does not exist
+     #database file for "community" does not exist
+     #database file for "package" does not exist
+
+-> SOLUÇÃO: 
+     -> $ sudo pacman -Syu --debug
+
+

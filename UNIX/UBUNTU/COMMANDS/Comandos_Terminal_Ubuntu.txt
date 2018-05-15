@@ -4,40 +4,6 @@ COMANDOS PARA O TERMINAL UBUNTU
 
 # Este arquivo foi construido a partir do Template encontrado no arquivo Guia_Simbolos.md
 
--------------------------------------
-ALTERANDO A COR DA FONTE DO SHELL
--------------------------------------
-
--> ATIVANDO A ALTERAÇÃO DA COR DA FONTE
-    -> $ setterm -foreground green -store
-
---------------------------
-ALTERANDO A FONTE DO SHELL
---------------------------
-
--> BAIXE A FONTE DESEJADA(MEU CASO É O TERMINUS)
-    -> $ sudo apt-get install terminus-font
-
--> VÁ ATÉ O DIRETÓRIO DAS FONTES:
-    -> cd /usr/share/kbd/consolefonts
-
--> ORGANIZAÇÃO DAS FONTES:
-    -> ter-v<tamanho><tipo>.psf.gz
-       -> # v é o tipo de unicode latino
-       -> # tamanho: 12 14 20 22 24 (tamanho da fonte)
-       -> # tipo: normal(n),bold(b)
-
--> PARA TESTAR A FONTE NO SISTEMA:
-    -> setfont ter-v<tamanho><tipo>.psf.gz
-       -> ex: setfont ter-v20n.psf.gz
-
--> PARA MANTER PERMANENTEMENTE A FONTE NO SISTEMA:
-    -> # Se conecte no arquivo vconsole.conf
-    -> $ sudo vim /etc/vconsole.conf
-    -> # Altere a opção FONT
-    -> $ FONT=ter-v20n
-    -> # Salve o arquivo e reinicie o sistema
-
 -----------------------
 INICIANDO UM NOVO SHELL
 -----------------------
@@ -46,15 +12,27 @@ INICIANDO UM NOVO SHELL
      -> <CTRL> + <ALT> + <T>
 
 
------------------------------------
-INSTALAÇÃO DE PROGRAMAS PELO SHELL:
------------------------------------
+---------------------------------------------------
+INSTALAÇÃO E DESINSTALAÇÃO DE PROGRAMAS PELO SHELL:
+---------------------------------------------------
 
  -> ATIVANDO PERMIÇAO DE SUPERUSER:
-     -> sudo comando
+     -> $ sudo comando
 
  -> INSTALANDO UM PROGRAMA NO UBUNTU
-     -> apt-get install nomeprograma
+     -> $ apt-get install nomeprograma
+
+ -> DESINSTALANDO UM PROGRAMA E SEUS DIRETÓRIOS:
+     -> $ apt-get --purge remove nomeprograma
+
+ -> DELETANDO SOMENTE O PROGRAMA, DEIXANDO SEUS DIRETÓRIOS:
+     -> $ apt-get remove nomeprograma
+
+ -> DELETANDO PACOTES DESNECESSÁRIOS
+     -> $ apt-get autoremove
+
+ -> VENDO TODOS OS PROGRAMAS INSTALADOS
+     -> $ dpkg --list
 
 ----------------------------------
 COMANDOS DE CONTROLE DE DIRETORIO:
@@ -82,13 +60,34 @@ COMANDOS DE CONTROLE DE DIRETORIO:
     -> $ rm -rf nomediretorio
         -> ATENCAO: É DELETADO TUDO DE DENTRO
 
- -> 
+ -> PARA COPIAR UM ARQUIVO PARA UM NOVO DIRETÓRIO:
+    -> $ cp nomearquivo /caminho/dir/novo
+       -> # tem que saber o EXATO caminho 
  
- COMO LIMPAR A TELA DO TERMINAL:
- -> clear
+ -> COMO LIMPAR A TELA DO SHELL:
+    -> $ clear
 
- COMO LER O MANUAL DE UM PROGRAMA:
- -> man nomeprograma
+------------------------------
+LEITURA E RENOMEIO DE ARQUIVOS
+------------------------------
+
+-> PARA LER UM ARQUIVO NO SHELL:
+    -> $ cat nomearquivo
+    -> $ more nomearquivo
+        -> # uma página por vez, use espaço
+
+-> PARA LER UM ARQUIVO NO PROGRAMA NANO
+    -> $ nano nomearquivo.extensao
+
+-> PARA LER UM ARQUIVO NO PROGRAMA VI E VIM
+    -> $ vi nomearquivo.extensao
+    -> $ vim nomearquivo.extensao
+
+-> PARA RENOMEAR UM ARQUIVO NO SHELL
+    -> $ mv nomeantigo.extensao nomenovo.extensao
+
+-> COMO LER O MANUAL DE UM PROGRAMA:
+    -> $ man nomeprograma
 
  COMO FECHAR O TERMINAL:
  -> exit

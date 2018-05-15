@@ -2,9 +2,22 @@
  COMANDOS PARA O ARCH LINUX
 ===========================
 
----------------------------------------
-INSTALAÇÃO E DESINSTALAÇAO DE PROGRAMAS
----------------------------------------
+# Este arquivo foi construido a partir do Template encontrado no arquivo Guia_Simbolos.md
+
+-----------------------
+INICIANDO UM NOVO SHELL
+------------------------
+Meu Arch Linux é somente por linha de comandos(CLI)
+Utilize o Programa Tmux para multiplexar o numero de Shells
+Leia o arquivo no Diretório PROGRAMS
+
+
+---------------------------------------------------
+INSTALAÇÃO E DESINSTALAÇAO DE PROGRAMAS PELO SHELL: 
+---------------------------------------------------
+
+-> ATIVANDO PERMIÇÃO DE SUPERUSER:
+       -> $ sudo comando
 
 -> INSTALANDO ALGUM PROGRAMA NO ARCH LINUX:
        -> $ pacman -S nomeprograma
@@ -12,38 +25,3 @@ INSTALAÇÃO E DESINSTALAÇAO DE PROGRAMAS
 -> DESINSTALANDO ALGUM PROGRAMA NO ARCH LINUX:
        -> $ pacman -R nomeprograma
 
-------------------------------------
-ALTERANDO A COR DA FONTE DO SHELL
--------------------------------------
-
--> ATIVANDO A ALTERAÇÃO DA COR DA FONTE
-    -> $ setterm -foreground green -store
-
---------------------------
-ALTERANDO A FONTE DO SHELL
---------------------------
-
--> BAIXE A FONTE DESEJADA(MEU CASO É O TERMINUS)
-    -> $ sudo pacman -S terminus-font
-
--> VÁ ATÉ O DIRETÓRIO DAS FONTES:
-    -> cd /user/share/kbd/consolefonts
-
--> ORGANIZAÇÃO DAS FONTES:
-    -> ter-v<tamanho><tipo>.psf.gz
-         -> # v é o tipo de unicode latino
-         -> # tamanho: 12 14 20 22 24 (tamanho da fonte)
-         -> # tipo: normal(n),bold(b)
-
-    -> meu favorito: ter-v20n.psf.gz
-
--> PARA TESTAR A FONTE NO SISTEMA:
-    -> setfont ter-v<tamanho><tipo>.psf.gz
-       -> ex: setfont ter-v20n.psf.gz
-
--> PARA MANTER PERMANENTE A FONTE NO SISTEMA:
-    -> # Se conecte no arquivo vconsole.conf
-    -> $ sudo vim /etc/vconsole.conf
-    -> # Altere a opção FONT
-    -> $ FONT=ter-v20n
-    -> # Salve o arquivo e reinicie o sistema
