@@ -88,8 +88,7 @@ INICIANDO UM NOVO SHELL
          -> $ ls *.extensão 
 
 -> PARA MOSTRAR TODOS OS ARQUIVOS,INCLUINDO OS OCULTOS:
-
-         -> $ la
+         -> $ ls -A
              
 -> PARA CRIAR UM DIRETORIO NOVO:
          -> $ mkdir nomediretorio 
