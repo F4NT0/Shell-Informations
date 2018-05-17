@@ -79,6 +79,9 @@ COMO SAIR E RETORNAR AO TMUX:
 -> VOLTAR A SESSÃO DO TMUX:
    -> $ tmux attach
 
+-> ENCERRANDO A SESSÃO DO TMUX:
+  -> $ tmux kill-session
+
 ------------------
 ENCERRANDO O TMUX:
 ------------------
@@ -95,6 +98,7 @@ ALTERANDO ENTRE JANELAS DO TMUX:
    
 -> clique <ENTER>
    
+
 -> selecione qual tela deseja ir
 
 --------------------------------------

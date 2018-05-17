@@ -18,7 +18,7 @@ ALTERANDO A FONTE DO SHELL
 --------------------------
 
 -> BAIXE A FONTE DESEJADA(MEU CASO É O TERMINUS)
-     -> $ sudo pacman -S terminus-font
+     ->$ sudo pacman -S terminus-font
 
 -> VÁ ATÉ O DIRETÓRIO DAS FONTES:
      -> $ cd /usr/share/kbd/consolefonts
@@ -39,7 +39,7 @@ ALTERANDO A FONTE DO SHELL
    -> # Se conecte no arquivo vconsole.conf
    -> $ sudo vim /etc/vconsole.conf
    -> # Altere a opção FONT
-   -> $ FONT=ter-v<tamanho><tipo>
+   -> # FONT=ter-v<tamanho><tipo>
    -> # ex: FONT=ter-v20n
    -> # Salve o arquivo e reinicie o computador
  
