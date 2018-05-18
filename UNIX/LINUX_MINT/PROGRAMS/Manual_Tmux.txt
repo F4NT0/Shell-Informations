@@ -51,6 +51,18 @@ COMO ANDAR ENTRE AS TELAS:
 -> POR ENUMERAÇÃO:
    -> <CTRL> + <B> + <Q> + <SELECIONE O NÚMERO DA TELA>
 
+
+------------------------------------
+COMO FAZER SCROLL DENTRO DE UMA TELA
+------------------------------------
+
+-> COMANDO PARA ATIVAR O MODO DE SCROLL:
+    -> <CTRL> + <B> + <[>
+
+-> SAINDO DO MODO DE SCROLL:
+    -> <Q>
+
+
 -------------------------------------
 CRIANDO UMA NOVA JANELA NO TMUX:
 -------------------------------------

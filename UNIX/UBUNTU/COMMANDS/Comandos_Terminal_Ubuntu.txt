@@ -48,7 +48,7 @@ COMANDOS DE CONTROLE DE DIRETORIO:
      -> $ ls *.extensao
 
  -> PARA MOSTRAR TODOS OS ARQUIVOS, INCLUINDO OS OCULTOS:
-     -> $ la
+     -> $ ls -A
 
  -> PARA CRIAR UM DIRETORIO NOVO:
     -> $ mkdir nomediretorio
