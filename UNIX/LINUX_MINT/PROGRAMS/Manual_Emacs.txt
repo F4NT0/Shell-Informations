@@ -1,0 +1,4 @@
+================================
+ MANUAL DE COMANDOS DA IDE EMACS
+================================
+Emacs é um Editor de texto como o VIM

@@ -16,14 +16,29 @@ ALTERANDO A COR DAS LETRAS DO SHELLL
 --------------------------
 ALTERANDO A FONTE DO SHELL
 --------------------------
+-> BAIXE A FONTE DESEJADA(MEU CASO É O TERMINUS)
+     ->$ sudo pacman -S terminus-font
 
--> BAIXE O PACOTE DESEJADO DE FONTE:
-    -> apt-get install xfonts-terminus
+-> VÁ ATÉ O DIRETÓRIO DAS FONTES:
+     -> $ cd /usr/share/kbd/consolefonts
 
--> CONFIGURANDO A FONTE DESEJADA:
-    -> # Clique com o botão direito no Shell (GUI)
-    -> # Clique em Perfis
-    -> # Clique em preferencias do Perfil
-    -> # vá em Fontes Personalizadas
-    -> # Na aba de busca, procure por terminus
-    -> # Selecione a fonte desejada 
+-> ORGANIZAÇÃOO DAS FONTES:
+     -> $ ter-v<tamanho><tipo>.psf.gz
+         -> # v é o tipo de unicode latino
+         -> # tamanho: 12 14 20 22 24 (tamanho da fonte)
+         -> # tipo: normal(n),bold(b)
+
+     -> # Meu favorito: ter-v20n.psf.gz
+
+-> PARA TESTAR A FONTE NO SISTEMA:
+   -> $ setfont ter-v<tamanho><tipo>.psf.gz
+       -> ex: $ setfont ter-v20n.psf.gz
+
+-> PARA MANTER PERMANENTEMENTE A FONTE NO SISTEMA:
+   -> # Se conecte no arquivo vconsole.conf
+   -> $ sudo vim /etc/vconsole.conf
+   -> # Altere a opção FONT
+   -> # FONT=ter-v<tamanho><tipo>
+   -> # ex: FONT=ter-v20n
+   -> # Salve o arquivo e reinicie o computador
+ 
