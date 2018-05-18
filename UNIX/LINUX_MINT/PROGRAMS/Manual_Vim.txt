@@ -89,4 +89,8 @@ OBS: ESTES COMANDOS DEVEM SER FEITOS FORA DO MODO DE INSERÇAO
        -> <p> #DEPOIS DO CURSOR
        -> <P> #ANTES  DO CURSOR
           
-          
+-> COLOCAR OS NÚMEROS DA LINHA NO VIM:
+       -> # Dentro do vim coloque o seguinte comando fora da inserção
+       -> $ :set nu
+
+         
