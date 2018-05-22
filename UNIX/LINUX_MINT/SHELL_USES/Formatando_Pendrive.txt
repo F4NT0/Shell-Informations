@@ -1,0 +1,43 @@
+=======================================
+FORMATANDO UMA PENDRIVE PELO LINUX MINT
+=======================================
+
+------------------
+INSTALANDO GPARTED
+------------------
+
+-> PARA INSTALAR GPARTED NO LINUX MINT
+   -> $ sudo apt-get install gparted
+   -> # Gparted serve para formatar via GUI Shells
+
+-> PARA INSTALAR PARTED NO LINUX MINT
+   -> $ sudo apt-get install parted
+
+
+----------------------------------
+FORMATANDO A PENDRIVE PELO GPARTED
+----------------------------------
+
+-> 
+
+
+---------------------------------
+FORMATANDO A PENDRIVE PELO PARTED
+---------------------------------
+
+-> INICIANDO A PARTED
+   -> $ sudo parted
+
+-> UTILIZE FDISK PARA SABER QUAIS DEVICES EXISTEM NO PC
+   -> $ fdisk -l
+
+-> VERIFIQUE QUAIS DEVICES ESTÃO MONTADOS
+   -> $ mount
+
+-> DESMONTE O DEVICE QUE DESEJA FORMATAR
+   -> $ unmount /dev/DEVICE
+   -> # DEVICE é o nome do device desejado
+   -> # É EXTRITAMENTE NECESSÁRIO QUE O DEVICE ESTEJA DESMONTADO
+
+-> CHAME O PARTED NO DEVICE DESMONTADO
+   -> $ parted /dev/DEVICE
