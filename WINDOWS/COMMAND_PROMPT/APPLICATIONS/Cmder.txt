@@ -1,0 +1,20 @@
+=========================================
+ CMDER: SIMULADOR DE CONSOLE PARA WINDOWS
+=========================================
+
+-> SITE OFICIAL
+    -> http://cmder.net/
+
+
+-> O QUE É:
+    -> Cmder é um pacote de Software criado pela necessidade de um bom simulador de console no windows
+    -> Com esse simulador, podemos programar em várias linguagens
+    -> Os pacotes já estão conectados ao sistema
+    -> Podemos utilizar os comandos de linux e windows ao mesmo tempo
+    -> Ele é um terminal portátil e eficiente para colocar em um Flash Drive
+    -> Programas contidos e descobertos até agora:
+         -> compilador de Ruby
+         -> compilador de Java
+         -> compilador de Python
+         -> VIM 
+         
