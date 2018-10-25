@@ -195,5 +195,10 @@ COMANDOS DE CONEXAO NETWORK:
            -> #caminhoparasite é o caminho completo para o website
            -> # exemplo: https://github.com 
 
-
+ -> PARA ACESSAR A PENDRIVE VIA TERMINAL NA FACULDADE:
+    -> # Abra um terminal(<CTRL> + <ALT> + <T>)
+    -> $ cd ..
+    -> # vá até o diretório central(/)
+    -> $ cd media
+    -> # procurar o diretorio da sua pendrive 
              

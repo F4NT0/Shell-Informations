@@ -25,3 +25,9 @@ INSTALAÇÃO E DESINSTALAÇAO DE PROGRAMAS PELO SHELL:
 -> DESINSTALANDO ALGUM PROGRAMA NO ARCH LINUX:
        -> $ pacman -R nomeprograma
 
+ -> PARA ACESSAR A PENDRIVE VIA TERMINAL NA FACULDADE:
+    -> # Abra um terminal(<CTRL> + <ALT> + <T>)
+    -> $ cd ..
+    -> # vá até o diretório central(/)
+    -> $ cd media
+    -> # procurar o diretorio da sua pendrive 

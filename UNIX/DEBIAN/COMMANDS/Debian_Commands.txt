@@ -190,3 +190,10 @@ INFORMAÇÕES DO SISTEMA
     -> <SHIFT> + <PAGEUP>/<PAGEDOWN>
         -> # suas siglas de teclado são: PAGEUP = PgUp , PAGEDOWN = PgDn
  
+ -> PARA ACESSAR A PENDRIVE VIA TERMINAL NA FACULDADE:
+    -> # Abra um terminal(<CTRL> + <ALT> + <T>)
+    -> $ cd ..
+    -> # vá até o diretório central(/)
+    -> $ cd media
+    -> # procurar o diretorio da sua pendrive 
+    

@@ -154,3 +154,10 @@ LEITURA E RENOMEIO DE ARQUIVOS
  COMO LER TODOS OS COMANDOS POSSIVEIS PELO TERMINAL:
  -> <TAB TAB>
 
+ -> PARA ACESSAR A PENDRIVE VIA TERMINAL NA FACULDADE:
+    -> # Abra um terminal(<CTRL> + <ALT> + <T>)
+    -> $ cd ..
+    -> # vá até o diretório central(/)
+    -> $ cd media
+    -> # procurar o diretorio da sua pendrive 
+
