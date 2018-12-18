@@ -1,0 +1,67 @@
+--------------------------------------------------------------
+    COMO COLOCAR UM SCRIPT PARA INICIALIZAR JUNTO COM O LINUX
+--------------------------------------------------------------
+
+ Existe um conjunto de diretórios do linux que rodam junto com a inicialização, estes diretorios cada um deles
+servem para uma função específica, como abaixo:
+    
+    Runlevel 0 = Halt ou Shutdown
+    Runlevel 1 = modo Single-user 
+    Runlevel 2 = Multi-user básico sem networking
+    Runlevel 3 = Text-based Multi-user com networking
+    Runlevel 4 = Gerenciador de Sessões com X11 (muitos S.O não usam)
+    Runlevel 5 = modo Multi-user com GUI completo
+    Runlevel 6 = Reboot
+
+ Os diretórios se encontram dentro do diretorio principal /etc  da seguinte forma:
+        /etc
+          |
+          | -> /init.d
+          | -> /rc0.d
+          | -> /rc1.d
+          | -> /rc2.d
+          | -> /rc3.d
+          | -> /rc4.d
+          | -> /rc5.d
+          | -> /rc6.d
+          | -> /rc.d
+                 |
+                 | -> /init.d
+                 | -> /rc0.d
+                 | -> /rc1.d
+                 | -> /rc2.d
+                 | -> /rc3.d
+                 | -> /rc4.d
+                 | -> /rc5.d
+                 | -> /rc6.d 
+
+  Dentro do Diretório /etc/init.d ficam os Scripts que desejamos rodar no sistema, onde depois em cada rcx.d iremos
+contruir um link simbolico para rodar o Scripts junto com a inicialização do sistema
+
+  Como criar um link simbolico:
+            ln -s caminho/ate/arquivo [S/K][prioridade]nomearquivo
+
+  tendo o arquivo Script bem colocado em /etc/init.d, iremos criar os links como acima, usando o seguinte exemplo:
+
+        EXEMPLO:
+            Queremos criar um Script para mandar um Hello World na tela na Inicialização do Servidor
+        1) Criamos um arquivo no diretorio /etc/init.d chamado helloworld
+        2) Criamos os links simbolicos, onde a prioridade de inicialização do arquivo é 60
+        3) Organização dos Links Simbolicos:
+                      /etc/rc.d (diretorio com todos os diretorios organizados)
+                         |
+                         | -> /rc0.d = ln -s /etc/init.d/helloworld K60helloworld
+                         | -> /rc1.d = ln -s /etc/init.d/helloworld K60helloworld
+                         | -> /rc2.d = ln -s /etc/init.d/helloworld S60helloworld
+                         | -> /rc3.d = ln -s /etc/init.d/helloworld S60helloworld
+                         | -> /rc4.d = ln -s /etc/init.d/helloworld S60helloworld
+                         | -> /rc5.d = ln -s /etc/init.d/helloworld S60helloworld
+                         | -> /rc6.d = ln -s /etc/init.d/helloworld K60helloworld 
+        
+        4) Os links devem ter o mesmo nome do arquivo Script
+        5) Após feito o link, é só reiniciar o sistema
+
+
+  
+
+  OBS: se for para iniciar um docker-compose em um script, para verificar se o sistema está online use o seguinte comando: docker ps -a (ele irá verificar todos os containers que foram iniciados)
