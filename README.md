@@ -1,10 +1,10 @@
-```diff 
-+BEM VINDO AO MEU REPOSITORIO DE INFORMACOES SOBRE SHELL CLI
-```
-```diff
--WELCOME TO MY INFORMATIONAL REPOSITORY ABOUT SHELL CLI
-```
+![](/images/Linux&#32;Version.png) &nbsp;![](/images/Windows&#32;Version.png)
 
+![](/images/Shell&#32;Type-Bash.png) &nbsp; ![](/images/Shell&#32;Type-Command&#32;Prompt.png) &nbsp; ![](/images/Shell&#32;Type-Powershell.png)
+
+---
+
+# Repositório de Informações sobre **`Shell`**
 
   Este repositório do GITHUB foi criado para que eu possa facilmente controlar todas as informações sobre o meu conhecimento de Shells CLI (Command-Line Interface) para eu poder ter um controle de todos os comandos uteis e atalhos de teclados que agilizem o meu trabalho com cada Sistema Operacional que eu utilizar ou surgir mais para a frente.
 
