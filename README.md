@@ -38,5 +38,9 @@
 
 ---
 
-![](/images/terminal2.gif)
+<!--![gif](/images/terminal2.gif)-->
+
+<p align="Center"><img src="images/terminal2.gif" with="300px" height="300px" tittle="image"></p>
+
+_Para ver o código desse gif_[_Clique Aqui_]()
       
