@@ -17,9 +17,15 @@
 
 ## ORGANIZAÇÃO DO REPOSITÓRIO
 
+---
+
 ![](/images/Shell-Informations-Diagram.png)
 
-    
+
+`Para visualizar a imagem clique` [Aqui](https://github.com/F4NT0/Shell-Informations/raw/master/images/Shell-Informations-Diagram.png)
+
+---
+
 * WINDOWS: diretório sobre informações sobre o Shell do Windows 
  * COMMAND_PROMPT: neste Diretório fica as informações do Prompt de Comando
 * POWERSHELL: neste diretório ficas as informações do POWERSHELL
@@ -28,6 +34,9 @@
 * GIT: informações de como usar o Git
 * SHELL-PROGRAMATIONS: programação em Shell Script
 * BASH_WINDOWS: Informação do bash(linux terminal no Windows)
-* ATALHOS: Atalhos do teclado úteis      
+* ATALHOS: Atalhos do teclado úteis   
+
+---
+
 
       
