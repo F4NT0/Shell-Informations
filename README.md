@@ -38,5 +38,5 @@
 
 ---
 
-
+![](/images/terminal2.gif)
       
