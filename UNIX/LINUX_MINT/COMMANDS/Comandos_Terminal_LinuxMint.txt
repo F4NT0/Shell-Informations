@@ -78,6 +78,10 @@ INICIANDO UM NOVO SHELL
 ------------------------------------
  COMANDOS DE CONTROLE DE DIRETORIO:
 -------------------------------------
+
+-> PARA ABRIR UM DIRETORIO NO GUI:
+      -> $ xdg-open /caminho/para/diretorio/diretorio
+
 -> PARA MUDAR DE DIRETORIO:         
          -> $ cd nomediretorio 
            
