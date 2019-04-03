@@ -26,19 +26,13 @@
 
 ---
 
-<span style="color: blue">WINDOWS</span>: diretório sobre informações sobre o Prompt de Comando e o Powershell do Windows
-
-<span style="color: green">UNIX</span>: diretório sobre informações sobre o Shell do Núcleo UNIX
-
-<span style="color: red">MACOSX</span>: neste diretório ficam as infomações do Macbook
-
-<span style="color: yellow">GIT</span>: informações de como usar o Git
-
-<span style="color: silver">SHELL-PROGRAMATIONS</span>: programação em Shell Script
-
-<span style="color: #00ffff">BASH_WINDOWS</span>: Informação do bash(linux terminal no Windows)
-
-<span style="color: purple">ATALHOS</span>: Atalhos do teclado úteis   
+* <span style="color: blue">WINDOWS</span>: diretório sobre informações sobre o Prompt de Comando e o Powershell do Windows
+* <span style="color: green">UNIX</span>: diretório sobre informações sobre o Shell do Núcleo UNIX
+* <span style="color: red">MACOSX</span>: neste diretório ficam as infomações do Macbook
+* <span style="color: yellow">GIT</span>: informações de como usar o Git
+* <span style="color: silver">SHELL-PROGRAMATIONS</span>: programação em Shell Script
+* <span style="color: #00ffff">BASH_WINDOWS</span>: Informação do bash(linux terminal no Windows)
+* <span style="color: purple">ATALHOS</span>: Atalhos do teclado úteis   
 
 ---
 
