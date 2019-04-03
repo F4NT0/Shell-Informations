@@ -26,7 +26,7 @@
 
 ---
 
-* <span style="color: blue">WINDOWS</span>: diretório sobre informações sobre o Prompt de Comando e o Powershell do Windows
+* <span style="color: blue ; font-family: courier new">WINDOWS</span>: diretório sobre informações sobre o Prompt de Comando e o Powershell do Windows
 * <span style="color: green">UNIX</span>: diretório sobre informações sobre o Shell do Núcleo UNIX
 * <span style="color: red">MACOSX</span>: neste diretório ficam as infomações do Macbook
 * <span style="color: yellow">GIT</span>: informações de como usar o Git
