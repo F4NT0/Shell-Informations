@@ -1,6 +1,7 @@
-![](/images/Linux&#32;Version.png) &nbsp;![](/images/Windows&#32;Version.png)
-
-![](/images/Shell&#32;Type-Bash.png) &nbsp; ![](/images/Shell&#32;Type-Command&#32;Prompt.png) &nbsp; ![](/images/Shell&#32;Type-Powershell.png)
+<!-- ![](/images/Linux_Version.png) &nbsp;![](/images/Windows_Version.png) -->
+<img src="images/Linux_Version.png">&nbsp;<img src="images/Windows_Version.png"><br>
+<img src="images/Shell_Type-Bash.png">&nbsp;<img src="images/Shell_Type-Command_Prompt.png">&nbsp;<img src="images/Shell_Type-Powershell.png">
+<!-- ![](/images/Shell_Type-Bash.png) &nbsp; ![](/images/Shell_Type-Command_Prompt.png) &nbsp; ![](/images/Shell_Type-Powershell.png) -->
 
 ---
 
@@ -19,8 +20,8 @@
 
 ---
 
-![](/images/Shell-Informations-Diagram.png)
-
+<!-- ![](/images/Shell-Informations-Diagram.png) -->
+<img src="images/Shell-Informations-Diagram.png">
 
 `Para visualizar a imagem clique` [Aqui](https://github.com/F4NT0/Shell-Informations/raw/master/images/Shell-Informations-Diagram.png)
 
