@@ -5,7 +5,7 @@
 
 ---
 
-# Repositório de Informações sobre **`Shell`**
+# Repositório de Informações sobre `Shell CLI`![](images/terminal.png)
 
   Este repositório do GITHUB foi criado para que eu possa facilmente controlar todas as informações sobre o meu conhecimento de Shells CLI (Command-Line Interface) para eu poder ter um controle de todos os comandos uteis e atalhos de teclados que agilizem o meu trabalho com cada Sistema Operacional que eu utilizar ou surgir mais para a frente.
 
